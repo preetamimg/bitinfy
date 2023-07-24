@@ -20,6 +20,14 @@
                             opacity: 95;
                         }
                     }
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus {
+                        -webkit-text-fill-color: $textClr;
+                        transition: background-color 5000s ease-in-out 0s;
+                        -webkit-background-origin: unset;
+                        caret-color: $textClr;
+                    }
                 }
                 & label{
                     font-size: 16px;
@@ -35,6 +43,8 @@
             }
             & .form-select {
                 border: 1px solid $dark-border;
+                color: $text-gray;
+                font-size: 14px;
             }
             & .input-group {
                 & .input-group-text {
@@ -45,8 +55,10 @@
                 font-size: 12px;
                 line-height: 14.06px;
                 font-weight: 400;
-                color: $text-gray;
                 right: 1rem;
+                & a {
+                    color: $text-gray;
+                }
             }
             &.start-label {
                 & .form-floating{
@@ -58,6 +70,36 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        & .dontaccount {
+            color: $textClr;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16.41px;
+            & a {
+                color: $theme-blue;
+            }
+        }
+    }
+    .navs {
+        padding: 4px;
+        background-color: $theme-dark;
+        border-radius: 5px;
+        & .nav-item {
+            min-width: 116px;
+            & .nav-link {
+                height: 31px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 14px;
+                color: $text-gray;
+                &.active{
+                    background-color: $theme-blue;
+                    color: $textClr;
                 }
             }
         }
