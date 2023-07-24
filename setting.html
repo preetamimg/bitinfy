@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main class="container-fluid profile">
+        <main class="container-fluid Setting">
             <div class="row mainInner bg-black">
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
@@ -94,7 +94,7 @@
 
                             </div>
                         </div> -->
-                    <div class="row profileTabs pt-3">
+                    <div class="row settingtab pt-3">
                         <div class="col-12">
                             <div class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
@@ -103,17 +103,57 @@
                                     </span>
                                     Currency
                                 </div>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="dropdown currancyDrop">
+                                    <button class="dropdown-toggle currancyDropbtn bg-black border-0 rounded-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         USDT
                                     </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <ul class="dropdown-menu currancymenu rounded-top-0 w-auto p-0">
+                                        <li><a class="dropdown-item currancy border-0" href="javascript:;">USDT</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript:;">INR</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript">EURO</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript:;">BTC</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript:;">ETH</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript:;">XRP</a></li>
+                                        <li><a class="dropdown-item currancy" href="javascript:;">GBP</a></li>
                                     </ul>
+                                    <!-- <select class="dropdown-menu currancymenu rounded-top-0 w-auto p-0">
+                                        <option value="1" class="currancy">USDT</option>
+                                        <option value="1" class="currancy">INR</option>
+                                        <option value="1" class="currancy">EURO</option>
+                                        <option value="1" class="currancy">BTC</option>
+                                        <option value="1" class="currancy">ETH</option>
+                                        <option value="1" class="currancy">XRP</option>
+                                        <option value="1" class="currancy">GBP</option>
+                                    </select> -->
                                 </div>
+                                <!-- <select class="form-select form-select-sm currancySelect shadow-none border-0 w-auto position-relative" aria-label=".form-select-sm example">
+                                    <option value="1" selected>USDT</option>
+                                    <option value="2" class="px-3 py-2 border-bottom border-1 border-white">INR</option>
+                                    <option value="3">EURO</option>
+                                    <option value="4">BTC</option>
+                                    <option value="5">ETH</option>
+                                    <option value="5">XRP</option>
+                                    <option value="6">GBP</option>
+                                </select> -->
                             </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="tabIcon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/svg/autorefresh.svg" alt="Auto Refresh" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Auto Refresh
+                                </div>
+                                <div class="form-switch switchMain p-0 d-flex align-items-center gap-2">
+                                    <label class="d-flex align-items-center switchLable" for="flexSwitchCheckChecked">
+                                        <span>On</span>
+                                        <span>/</span>
+                                        <span>Off</span>
+                                    </label>
+                                    <input class="form-check-input switchInput border-0 bg-black shadow-none m-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-12">
                             <a href="javascript:;" class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
@@ -142,16 +182,20 @@
                             </a>
                         </div>
                         <div class="col-12">
-                            <div class="profileBtn text-decoration-none d-flex align-items-center fw-normal gap-3">
-                                <div>
+                            <div class="profileBtn text-decoration-none d-flex align-items-center fw-normal gap-3 justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
                                     <span class="tabIcon d-flex align-items-center justify-content-center">
                                         <img src="assets/img/svg/mode.svg" alt="mode" class="h-100 w-100 img-fluid">
                                     </span>
                                     Mode
                                 </div>
-                                <div class=" form-switch">
-                                    <label class="" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                                    <input class="form-check-input shadow-none" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <div class="form-switch switchMain p-0 d-flex align-items-center gap-2">
+                                    <label class="d-flex align-items-center switchLable" for="flexSwitchCheckChecked">
+                                        <span>Day</span>
+                                        <span>/</span>
+                                        <span>Night</span>
+                                    </label>
+                                    <input class="form-check-input switchInput border-0 bg-black shadow-none m-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
                                 </div>
                             </div>
                         </div>
