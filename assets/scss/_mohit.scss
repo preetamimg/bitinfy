@@ -44,6 +44,7 @@
         font-size: 22px;
     }
 }
+// switch all
 .switchMain {
     & .switchLable {
         font-size: 13px;
@@ -55,6 +56,18 @@
         background: url(../img/svg/switchicon.svg) no-repeat;
         background-size: 18px 18px;
         background-position-y: center;
+    }
+}
+// check button all
+.checkBtn {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    &:checked {
+        background-color: $theme-blue;
+        background-image: url(../img/svg/checkIcon.svg);
+        background-size: 12px 10px;
+        border-color: $theme-blue;
     }
 }
 
@@ -229,6 +242,39 @@
             color: $theme1;
         }
     }
+    & .coinTab {
+        background-color: $theme-dark;
+        & .coinLink {
+            font-size: 14px;
+            font-weight: 700;
+            width: 116px;
+            color: $text-gray;
+            transition: all 0.3s ease-in-out;
+            &.active {
+            background:$theme-blue ;
+            color: $textClr;
+            }
+        }
+    }
+    & .coinTabContent {
+        & .tabfilter {
+            background-color: $theme-dark;
+            border-radius: 10px 10px 0px 0px;
+            & .selectFilter {
+                font-size: 16px;
+                color: $textClr;
+                &:focus-visible {
+                    border: 0;
+                }
+                & option {
+                    font-size: 16px;
+                    background:$bodyBg ;
+                    color: $textClr;
+                }
+            }
+            
+        }
+    }
 }
 // market management page end
 
@@ -244,6 +290,18 @@
         padding-top: 60px;
         padding-bottom: 60px;
         color: $textClr;
+    }
+    & .dontAccount {
+        font-size: 16px;
+        color: $textClr;
+        & .dontbtn {
+            color: $theme-blue;
+            font-size: 14px;
+        }
+    }
+    & .skipbtn {
+        font-size: 14px;
+        color: $theme-blue;
     }
 }
 // welcomev page end

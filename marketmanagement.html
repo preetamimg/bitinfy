@@ -96,14 +96,25 @@
                             </div>
                         </div> -->
                     <div class="row pt-3">
-                        <nav class="col-12">
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-coins-tab" data-bs-toggle="tab" data-bs-target="#nav-coins" type="button" role="tab" aria-controls="nav-coins" aria-selected="true">Coins</button>
-                                <button class="nav-link" id="nav-exchanges-tab" data-bs-toggle="tab" data-bs-target="#nav-exchanges" type="button" role="tab" aria-controls="nav-exchanges" aria-selected="false">Exchanges</button>
+                        <nav class="col-12 border-0 justify-content-center text-center">
+                            <div class="nav nav-tabs coinTab d-inline-flex border-0 p-1 rounded-2 justify-content-center" id="nav-tab" role="tablist">
+                                <button class="nav-link coinLink border-0 rounded-2 active" id="nav-coins-tab" data-bs-toggle="tab" data-bs-target="#nav-coins" type="button" role="tab" aria-controls="nav-coins" aria-selected="true">Coins</button>
+                                <button class="nav-link coinLink border-0 rounded-2" id="nav-exchanges-tab" data-bs-toggle="tab" data-bs-target="#nav-exchanges" type="button" role="tab" aria-controls="nav-exchanges" aria-selected="false">Exchanges</button>
                             </div>
                         </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-coins" role="tabpanel" aria-labelledby="nav-coins-tab" tabindex="0">...</div>
+                        <div class="tab-content col-12 pt-3" id="nav-tabContent">
+                            <div class="tab-pane fade show mx-0 active row coinTabContent" id="nav-coins" role="tabpanel" aria-labelledby="nav-coins-tab" tabindex="0">
+                                <div class="col-12 tabfilter py-2">
+                                    <select name="" id="" class="border-0 bg-transparent selectFilter">
+                                        <option value="1" selected>All</option>
+                                        <option value="2" >All</option>
+                                        <option value="3" >All</option>
+                                        <option value="3" >All</option>
+                                    </select>
+                                    
+                                    <input class="form-check-input checkBtn shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                </div>
+                            </div>
                             <div class="tab-pane fade" id="nav-exchanges" role="tabpanel" aria-labelledby="nav-exchanges-tab" tabindex="0">...</div>
                         </div>
                     </div>
