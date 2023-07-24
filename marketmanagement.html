@@ -105,26 +105,27 @@
                         <div class="tab-content col-12 pt-3 " id="nav-tabContent">
                             <div class="tab-pane fade show mx-0 active row coinTabContent" id="nav-coins" role="tabpanel" aria-labelledby="nav-coins-tab" tabindex="0">
                                 <div class="col-12 py-2 px-0">
-                                    <div class="tabfilter d-flex align-items-center justify-content-between px-4">
+                                    <div class="tabfilter d-flex align-items-center justify-content-between gap-2">
                                         <select name="" id="" class="border-0 bg-transparent selectFilter">
                                             <option value="1" selected>All</option>
                                             <option value="2" >All</option>
                                             <option value="3" >All</option>
                                             <option value="3" >All</option>
                                         </select>
-                                        <div class="search">
-                                            <div class="icon"></div>
-                                            <div class="input">
-                                                <input type="text" placeholder="Search..." id="mysearch">
+                                        <div class="input-group border rounded-3 border-0 me-2">
+                                            <div class="input-group-prepend border-0 ps-1 d-flex align-items-center">
+                                            <button id="button-addon4" type="button" class="p-0 bg-transparent border-0 d-inline-flex align-items-center justify-content-center">
+                                                <img src="assets/img/svg/searchicon2.svg" alt="">
+                                            </button>
                                             </div>
-    
-                                            <span class="clear" onclick="document.getElementById('mysearch').value = ''">x</span>
+                                            <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control searchInput bg-transparent shadow-none border-0">
                                         </div>
                                         <input class="form-check-input checkBtn shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                                 <div class="col-12 tabContentMain px-0">
                                     <div class="row mx-0">
+                                        
                                         <div class="col-12 px-0">
                                             <div class="marketlabelmain d-flex align-items-center justify-content-between">
                                                 <label for="btc" class="marketlabel d-flex align-items-center gap-3 w-100">
