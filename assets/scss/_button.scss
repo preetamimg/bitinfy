@@ -56,13 +56,41 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #FFF;
+    color:$white;
     font-family: 'Roboto';
     font-size: 8px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     border-radius: 0px 2px 2px 0px;
-    background:#2CBD96;
+    background: $theme4;
     padding: 3px 13px;
 }
+
+.cardHeaingsection{
+    color: $white;
+    font-family:' Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.viewBtn{
+    color:$theme1;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.customBtn {
+    font-size: 16px;
+    font-weight: 700;
+    color: $textClr;
+    background: $theme-blue;
+    padding: 10px 110px 10px 110px;
+    border-radius: 10px;
+    text-decoration: none;
+} 

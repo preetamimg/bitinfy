@@ -69,40 +69,52 @@
     <body>
         <main class="container-fluid">
             <div class="row mainInner bg-black">
-                <div class="col-12 px-0 flex-fill" data-page-name="signInPage">
-                    <div class="innerPage d-flex  align-items-center">
+                <div class="col-12 px-0 flex-fill signInPage">
+                    <div class="innerPage d-inline-flex  align-items-center">
                         <div class="row mx-0 py-4">
-                            <div class="col-12 text-center logoImg my-5"><img src="assets/img/logo/whiteLogo.png" class="h-100" alt=""></div>
-                            <div class="col-12 text-center journeyHeading text-white mb-3">Welcome Back to the journey With CHASE</div>
+                            <div class="col-12 text-center logoImg mt-5 mb-1 px-5"><img src="assets/img/loginImg.png" class="w-100" alt=""></div>
+                            <div class="col-12 text-center journeyHeading text-white mb-3">Login</div>
                             <form action="" class="form col-12 px-0">
                                 <div class="row mx-0 gap-3">
                                     <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control shadow-none text-white bg-transparent fs-14" id="floatingInput" value="Enter Phone Number" placeholder="Enter Phone Number">
-                                            <label for="floatingInput" class="text-white fs-14">Phone Number</label>
+                                        <div class="cards py-3 px-2">
+                                            <div class="row ">
+                                                <div class="col-auto pe-0">
+                                                    <select class="form-select h-100 form-control shadow-none text-white bg-transparent  border-end-0 rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
+                                                        <option selected>+91</option>
+                                                        <option value="1">+116</option>
+                                                        <option value="2">+107</option>
+                                                        <option value="3">+61</option>
+                                                    </select>
+                                                    <!-- <div class="form-floating">
+                                                        <label for="floatingSelect" class="text-white">C.C</label>
+                                                    </div> -->
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control border-start-0 rounded-start-0 shadow-none bg-transparent" id="floatingInput" value="" placeholder="Phone Number">
+                                                        <label for="floatingInput" class="text-white ">Phone Number</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="input-group">
-                                            <div class="form-floating">
-                                                <input type="password" class="form-control shadow-none border-end-0 text-white bg-transparent fs-14" id="floatingInput2" value="Enter Password" placeholder="Enter Password">
-                                                <label for="floatingInput2" class="text-white fs-14">Password</label>
+                                        <div class="cards py-3 px-2 shadow">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="password" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput2" value="" placeholder="Enter Password">
+                                                    <label for="floatingInput2" class="text-white "><span>Password</span></label>
+                                                </div>
+                                                <span class="input-group-text bg-transparent border-start-0"><div class="passwordText"><img src="assets/img/svg/Eye.svg" class="showImg" alt=""><img src="assets/img/svg/EyeClose.svg" class="hiddenImg" alt=""></div></span>
                                             </div>
-                                            <span class="input-group-text bg-transparent border-start-0"><div class="passwordText"><img src="assets/img/svg/Eye.svg" class="showImg" alt=""><img src="assets/img/svg/EyeClose.svg" class="hiddenImg" alt=""></div></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mx-0 gap-4 mt-5">
-                                    <div class="col-12 text-center"><button type="button" class="btn btn-lg fw-semibold rounded btn-theme1 px-5 fs-14">Continue</button></div>
+                                    <div class="col-12 text-center"><button type="button" class="customBtn border-0 shadow-none">Continue</button></div>
                                     <div class="col-12 text-center text-white-50 fs-12"><a href="javascript:;" class="text-decoration-none text-white">Forgot Password?</a></div>
-                                    <div class="col-12 orviaContent text-center"><span class="fs-14 text-white-50">Or via</span></div>
-                                    <div class="col-12 px-0">
-                                        <div class="row mx-0 justify-content-center">
-                                            <div class="col-auto"><a href="javascript:;" class="googleBtn d-flex align-items-center justify-content-center bg-white p-2 rounded"><img src="assets/img/svg/Google.svg" class="w-100" alt=""></a></div>
-                                            <div class="col-auto"><a href="javascript:;" class="googleBtn d-flex align-items-center justify-content-center bg-primary p-2 rounded"><img src="assets/img/svg/facebook.svg" class="w-100" alt=""></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 fw-semibold text-center text-white-50 fs-12">Don't You have an account? <a href="javascript:;" class="text-decoration-none text-white ms-1">Sign Up</a></div>
+                                    <div>
                                 </div>
                             </form>
                         </div>
