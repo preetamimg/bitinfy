@@ -145,6 +145,34 @@
 
 
 
+:root{
+  --body-bg: #121212;
+  --text-Clr: #fff;  
+  --themeing1: #185CA0;
+  --themeing2: #1D1D1D;
+  --themeing3: #2CBD96;
+  --themeing4: #E96464;
+  --text-gray: #CAC4D0;
+}
+
+.lightMode{
+  --body-bg: #fff;
+  --text-Clr: #121212;  
+  --themeing1: #185CA0;
+  --themeing2: #F3F3F3;
+  --themeing3: #2CBD96;
+  --themeing4: #E96464;
+  --text-gray: #CAC4D0;
+}
+
+$bodyBg: #{var(--body-bg)};
+$textClr: #{var(--text-Clr)};
+$theme-blue: #{var(--themeing1)};
+$theme-dark: #{var(--themeing2)};
+$theme-green: #{var(--themeing3)};
+$theme-red: #{var(--themeing4)};
+$text-gray: #{var(--text-gray)};
+
 
 
 
