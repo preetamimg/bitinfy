@@ -31,38 +31,15 @@
                     background-color: $black;
                 }
             }
-            & .form-check-label, & .form-check-input {
-                cursor: pointer;
-            }
-        }
-        & .input-group {
-            & .input-group-text {
-                & img {
-                    width: 20px;
-                    height: 20px;
-                }
-                & .hiddenImg {
-                    opacity: 0;
-                    visibility: hidden;
-                }
-                & .passwordText {
-                    width: 20px;
-                    height: 100%;
-                    position: relative;
-                    & img{
-                        position: absolute;
-                        inset: 0;
-                        margin: auto;
-                    }
-                    & .hiddenImg {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                    & .showImg {
-                        opacity: 0;
-                        visibility: hidden;
-                    }
-                }
+            // & .form-floating>.form-control:not(:placeholder-shown){
+            //     padding-top: 0.925rem;
+            //     padding-bottom: 0.625rem;
+            // }
+            // & .form-floating>.form-control:not(:placeholder-shown)~label {
+            //     transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem);
+            // }
+            & .form-select {
+                border: 1px solid $dark-border;
             }
         }
     }
