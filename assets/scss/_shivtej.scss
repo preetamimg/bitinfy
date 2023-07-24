@@ -1,11 +1,11 @@
 .indexMainPage{
     & .ouutercard{
-        background-color: rgba(29, 29, 29, 1);
+        background: $theme2;
         padding: 4px 0px;
 
         & .marqeeSection{
             & .marqueeText{
-                color: #FFF;
+                color:$white;
                 font-family: 'Roboto';
                 font-size: 10px;
                 font-style: normal;
@@ -16,9 +16,9 @@
                     height: 5px;
                 }
                 & .subHeading{
-                    color: #2CBD96;
+                    color: $theme4;
                     &.subHeading2{
-                        color: #E96464;
+                        color:$theme3;
                     }
 
                 }
@@ -29,12 +29,11 @@
         padding: 0px 16px;
         & .navTabs{
             border-radius: 5px;
-            background: #1D1D1D;
+            background: $theme2;
             padding: 4px;
             & .navLink{
                 border-radius: 5px !important;
-                box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.12);
-                color: var(--dm-input-field-text, #CAC4D0);
+                color: darken($white,20);
                 font-family: 'Roboto';
                 font-size: 14px;
                 font-style: normal;
@@ -44,9 +43,8 @@
                 &.active{
                     border-radius: 5px !important;
                     padding: 5px 13px;
-                    background: #2CBD96;
-                    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.12);
-                    color: #F8F8F8;
+                    background: $theme4;
+                    color: $white;
                     font-family:' Roboto';
                     font-size: 14px;
                     font-style: normal;
@@ -56,7 +54,7 @@
             }
         }
         & .viewBtn{
-            color: rgba(28, 141, 255, 0.60);
+            color:$theme1;
             font-family: 'Roboto';
             font-size: 14px;
             font-style: normal;
@@ -70,7 +68,7 @@
             & .tabePane{
                 & .btcCard{
                     border-radius: 8px;
-                    background: #1D1D1D;
+                    background: $theme2;
                     position: relative;
                     &.active{
                         box-shadow:  0px 0px 8px 0px rgba($theme1, 0.5);
@@ -84,7 +82,7 @@
                                 height: 40px;
                             }
                             & .cardHeaing{
-                                color: #FFF;
+                                color: $white;
                                 font-family:' Roboto';
                                 font-size: 14px;
                                 font-style: normal;
@@ -92,7 +90,7 @@
                                 line-height: normal;
                             }
                             & .pera{
-                                color: #FFF;
+                                color:$white;
                                 font-family: 'Roboto';
                                 font-size: 12px;
                                 font-style: normal;
@@ -104,6 +102,56 @@
                 }
             }
         }
+    }
+
+    & .portfolio{
+      padding: 10px 16px !important;
+      & .outterCard{
+        background-color: $theme2;
+        border-radius: 7px;
+        padding: 15px 20px;
+        & .portfolioCard{
+           position: relative;
+           &::before{
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0px;
+            width: 1px;
+            height: 33px;
+            background-color: $theme1;
+
+           }
+            & .subHeading{
+                color: darken($white,20);
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            & .headingcard{
+                color:$white;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            & .pera{
+                color:$theme4;
+                font-family: 'Roboto';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                & .icon{
+                    width: 12px;
+                    height: 14px;
+                }
+            }
+        }
+      }
     }
 }
 
