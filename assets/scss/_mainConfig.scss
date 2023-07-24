@@ -260,6 +260,7 @@
       background-size: cover;
       background-position: top center;
       &>.mainInner {
+        background-color: $bodyBg;
         height: 100% !important;
         border: 0 !important;
         position: relative !important;
