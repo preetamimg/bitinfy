@@ -1,11 +1,11 @@
 .indexMainPage{
     & .ouutercard{
-        background: $theme2;
+        background: $theme-dark;
         padding: 4px 0px;
 
         & .marqeeSection{
             & .marqueeText{
-                color:$white;
+                color:$textClr;
                 font-family: 'Roboto';
                 font-size: 10px;
                 font-style: normal;
@@ -16,9 +16,9 @@
                     height: 5px;
                 }
                 & .subHeading{
-                    color: $theme4;
+                    color: $theme-green;
                     &.subHeading2{
-                        color:$theme3;
+                        color:$theme-red;
                     }
 
                 }
@@ -29,11 +29,11 @@
         padding: 0px 16px;
         & .navTabs{
             border-radius: 5px;
-            background: $theme2;
+            background: $theme-dark;
             padding: 4px;
             & .navLink{
                 border-radius: 5px !important;
-                color: darken($white,20);
+                color:$text-gray;
                 font-family: 'Roboto';
                 font-size: 14px;
                 font-style: normal;
@@ -43,8 +43,8 @@
                 &.active{
                     border-radius: 5px !important;
                     padding: 5px 13px;
-                    background: $theme4;
-                    color: $white;
+                    background: $theme-green;
+                    color: $textClr;
                     font-family:' Roboto';
                     font-size: 14px;
                     font-style: normal;
@@ -53,14 +53,6 @@
                 }
             }
         }
-        & .viewBtn{
-            color:$theme1;
-            font-family: 'Roboto';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
     }
     & .sellerCard{
         padding: 0px 16px !important;
@@ -68,7 +60,7 @@
             & .tabePane{
                 & .btcCard{
                     border-radius: 8px;
-                    background: $theme2;
+                    background: $theme-dark;
                     position: relative;
                     &.active{
                         box-shadow:  0px 0px 8px 0px rgba($theme1, 0.5);
@@ -82,7 +74,7 @@
                                 height: 40px;
                             }
                             & .cardHeaing{
-                                color: $white;
+                                color: $textClr;
                                 font-family:' Roboto';
                                 font-size: 14px;
                                 font-style: normal;
@@ -90,7 +82,7 @@
                                 line-height: normal;
                             }
                             & .pera{
-                                color:$white;
+                                color:$textClr;
                                 font-family: 'Roboto';
                                 font-size: 12px;
                                 font-style: normal;
@@ -107,7 +99,7 @@
     & .portfolio{
       padding: 10px 16px !important;
       & .outterCard{
-        background-color: $theme2;
+        background-color: $theme-dark;
         border-radius: 7px;
         padding: 15px 20px;
         & .portfolioCard{
@@ -119,11 +111,16 @@
             top: 0px;
             width: 1px;
             height: 33px;
-            background-color: $theme1;
+            background-color:$theme-blue;
 
            }
+           &:last-child{
+            &::before{
+                display: none;
+            }
+           }
             & .subHeading{
-                color: darken($white,20);
+                color: $text-gray;
                 font-family: 'Roboto';
                 font-size: 14px;
                 font-style: normal;
@@ -131,7 +128,7 @@
                 line-height: normal;
             }
             & .headingcard{
-                color:$white;
+                color:$textClr;
                 font-family: 'Roboto';
                 font-size: 14px;
                 font-style: normal;
@@ -139,7 +136,7 @@
                 line-height: normal;
             }
             & .pera{
-                color:$theme4;
+                color:$theme-green;
                 font-family: 'Roboto';
                 font-size: 10px;
                 font-style: normal;
@@ -150,6 +147,162 @@
                     height: 14px;
                 }
             }
+        }
+      }
+    }
+    & .owlSection{
+      padding: 10px 16px !important;
+
+        & .exchangeOwl{
+            & .owl-stage-outer{
+                & .owl-stage{
+                    padding: 0;
+                    & .owl-item {
+                        & .item{
+                            & .owlImg{
+                                width: 44px;
+                                height: 44px;
+                                background-color: $theme-dark;
+                                padding: 8px;
+                                border-radius: 50%;
+                            }
+                            & .pera{
+                                color:$textClr;
+                                text-align: center;
+                                font-family: 'Roboto';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+            & .owl-dots{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+                & .owl-dot{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color:$text-gray;
+                    &.active{
+                        background-color:$theme-blue;
+                    }
+                }
+            }
+        }
+    }
+    & .binanceCard{
+      padding: 5px 16px !important;
+        & .outterCard{
+            background-color: $theme-dark;
+            border-radius: 8px;
+            padding: 15px 0px;
+            & .icon{
+                width: 25px;
+                height: 25px;
+            }
+            & .ethHeading{
+                color:$textClr;
+                font-family: 'Roboto';
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            & .pera{
+                color: $theme-blue;
+                font-family: 'Roboto';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            & .dollerHeading{
+                color:$textClr;
+                text-align: center;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            & .dollerPera{
+                color:$text-gray;
+                text-align: center;
+                font-family: 'Roboto';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                &.dollerPera2{
+                    font-size: 9px;
+                }
+            }
+            & .buyBtn{
+                font-size: 12px;
+                border-radius: 5px;
+            }
+        }
+    }
+    & .ArbitrageCard{
+      padding: 5px 16px !important;
+      & .outterCard{
+        background-color: $theme-dark;
+        border-radius:5px;
+        padding: 12px 0px;
+        & .icon{
+            width: 15px;
+            height: 15px;
+        }
+        & .criptoHeading{
+            color:$textClr;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .criptoSubheading{
+            color:$theme-blue;
+            font-family:' Roboto';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .pera{
+            color: $textClr;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .bitcoinSubheading{
+            color:$text-gray;
+            font-family:' Roboto';
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .bitcoinHeading{
+            color:$textClr;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .buyBtn{
+            font-size: 12px;
+            border-radius: 5px;
         }
       }
     }
