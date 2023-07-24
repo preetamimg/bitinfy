@@ -44,6 +44,19 @@
         font-size: 22px;
     }
 }
+.switchMain {
+    & .switchLable {
+        font-size: 13px;
+    }
+    & .switchInput {
+        height: 20px;
+        width: 40px;
+        // background: lighten($black, 10);
+        background: url(../img/svg/switchicon.svg) no-repeat;
+        background-size: 18px 18px;
+        background-position-y: center;
+    }
+}
 
 // profile page start
 .profile {
@@ -138,5 +151,99 @@
 // profile page end
 
 // setting page start 
-
+.Setting {
+    & .settingtab {
+        gap: 10px;
+        & .currancyDrop {
+            & .currancyDropbtn {
+                background: lighten($black, 10);
+                color: $theme1;
+                font-size: 12px;
+                padding: 5px 26px 5px 12px;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right:8px;
+                    height: 6px;
+                    width: 13px;
+                    background: url(../img/svg/dropdown.svg) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                }
+            }
+            & .currancymenu {
+                min-width: auto;
+                background-color: lighten($black, 15);
+                & .currancy {
+                    font-size: 10px;
+                    color: lighten($white,40);
+                    padding: 10px 32px 10px 10px;
+                    border-top: 1px solid lighten($black, 30);
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+        }
+        // & .currancySelect {
+        //     background: lighten($black, 3);
+        //     // background-image: url(../img/svg/dropdown.svg);
+        //     color: $theme1;
+        //     font-size: 12px;
+        //     padding: 5px 26px 5px 12px;
+        //     &::before {
+        //         content: '';
+        //         position: absolute;
+        //         top: 50%;
+        //         right: 8px;
+        //         height: 7px;
+        //         width: 14px;
+        //         transform: translateY(-50%);
+        //         background: url(../img/svg/dropdown.svg) no-repeat;
+        //         background-size: cover;
+        //         background-position: center;
+        //     }
+        //     & option {
+        //         background: lighten($black, 15);
+        //         border: 0;
+        //         color: lighten($white,40);
+        //         &:hover {
+        //             background: lighten($black, 40);
+        //         }
+        //     }
+        // }
+    }
+}
 // setting page end 
+
+// market management page start
+.marketmanag {
+    & .innerheader {
+        & .apply {
+            font-size: 16px;
+            color: $theme1;
+        }
+    }
+}
+// market management page end
+
+// welcomev page start
+.welcomeSection {
+    & .welcomelogo {
+        height: 111px;
+        width: 296px;
+    }
+    & .welcometitle {
+        font-size: 36px;
+        line-height: normal;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $textClr;
+    }
+}
+// welcomev page end

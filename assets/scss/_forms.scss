@@ -1,67 +1,105 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
-    .form{
-        & .form-select {
-            &:focus{
-                border-color: $white;
-            }
-        }
-        & .form-floating {
-            & .form-control {
-                background-image: none;
-                height: calc(3.1rem + 2px);
-                    &:focus{
-                        border-color: $white;
+    .form {
+        & .cards {
+            background-color: $theme-dark;
+            border-radius: 10px;
+            padding: 1.5rem 1rem;
+            & .form-floating {
+                & .form-control {
+                    height: 47px;
+                    border: 1px solid $dark-border;
+                    color: $text-gray;
+                    font-size: 14px;
+                    &:not(:placeholder-shown),
+                    &:focus {
+                        padding-top: 0.925rem;
+                        padding-bottom: 0.625rem;
+                        &~label{
+                            transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem);
+                            opacity: 95;
+                        }
                     }
-                &:-webkit-autofill,
+                    &:-webkit-autofill,
                     &:-webkit-autofill:hover,
                     &:-webkit-autofill:focus {
-                        -webkit-text-fill-color: $white;
+                        -webkit-text-fill-color: $textClr;
                         transition: background-color 5000s ease-in-out 0s;
                         -webkit-background-origin: unset;
-                        caret-color: $white;
+                        caret-color: $textClr;
                     }
+                }
+                & label{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18.75px;
+                    color: $text-gray;
+                    & span {
+                        background-color: $theme-dark;
+                        padding: 0px 5px;
+                        color: $text-gray;
+                    }
+                }
+            }
+            & .form-select {
+                border: 1px solid $dark-border;
+                color: $text-gray;
+                font-size: 14px;
+            }
+            & .input-group {
+                & .input-group-text {
+                border: 1px solid $dark-border;
+                }
+            }
+            & .forgot {
+                font-size: 12px;
+                line-height: 14.06px;
+                font-weight: 400;
+                right: 1rem;
+                & a {
+                    color: $text-gray;
+                }
+            }
+            &.start-label {
+                & .form-floating{
+                    & .form-control {
+                        &:not(:placeholder-shown),
+                        &:focus {
+                            &~label{
+                                transform: scale(0.85) translateY(-1.5rem) translateX(-6.15rem);
+                            }
+                        }
+                    }
+                }
             }
         }
-        & .form-check {
-            & .form-check-input {
-                box-shadow: none;
-                border: 1px solid $white;
-                &:checked{
-                    background-color: $black;
-                }
-            }
-            & .form-check-label, & .form-check-input {
-                cursor: pointer;
+        & .dontaccount {
+            color: $textClr;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16.41px;
+            & a {
+                color: $theme-blue;
             }
         }
-        & .input-group {
-            & .input-group-text {
-                & img {
-                    width: 20px;
-                    height: 20px;
-                }
-                & .hiddenImg {
-                    opacity: 0;
-                    visibility: hidden;
-                }
-                & .passwordText {
-                    width: 20px;
-                    height: 100%;
-                    position: relative;
-                    & img{
-                        position: absolute;
-                        inset: 0;
-                        margin: auto;
-                    }
-                    & .hiddenImg {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                    & .showImg {
-                        opacity: 0;
-                        visibility: hidden;
-                    }
+    }
+    .navs {
+        padding: 4px;
+        background-color: $theme-dark;
+        border-radius: 5px;
+        & .nav-item {
+            min-width: 116px;
+            & .nav-link {
+                height: 31px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 14px;
+                color: $text-gray;
+                &.active{
+                    background-color: $theme-blue;
+                    color: $textClr;
                 }
             }
         }
