@@ -5,17 +5,47 @@
         & .innerheader {
             & .profile {
             & .userImage {
-                width: 35px;
-                height: 35px;
+                width: 36px;
+                height: 36px;
+                background-color: rgba(29, 29, 29, 1);
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
                 & img {
                 object-fit: cover;
                 }
             }
             }
+            & .serachInput{
+                & .inputGroup{
+                    & .inputText{
+                        background-color: rgba(29, 29, 29, 1);
+                    }
+                    & .inputStyle{
+                        background-color: rgba(29, 29, 29, 1);
+                        color: #CAC4D0;
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        &::placeholder{
+                            color: #CAC4D0;
+                            font-family: 'Roboto';
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
             & .notification {
             & .notificationIcon {
-                width: 20px;
+                width: 24px;
+                height: 24px;
                 & img {
                     transition: all 0.3s;
                 }
@@ -30,6 +60,46 @@
                 }
             }
             }
+            & .navDropdwon{
+                & .dropDwonNavBar{
+                    & .dropDwonBtn{
+                        border-radius: 4px;
+                        background: #1D1D1D;
+                        box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.12);
+                        color: rgba(28, 141, 255, 0.60);
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    & .dropMenu{
+                        background-color: rgba(29, 29, 29, 1);
+                        & li{
+                            & .dropItem{
+                                color:#CAC4D0;
+                                font-family: 'Roboto';
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                transition: all 0.3s ease-in-out;
+                                &:hover{
+                                   color: rgba(28, 141, 255, 0.60);
+                                   background-color: transparent;
+                                   background-image: none;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             & .matchTime{
                 font-size: 10px;
             }

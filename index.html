@@ -74,21 +74,123 @@
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
                         <div class="col-auto profile">
-                            <div class="userImage overflow-hidden"><img src="assets/img/svg/Menu.svg" class="w-100" alt="Profile"></div>
+                            <div class="userImage rounded-circle overflow-hidden"><img src="assets/img/user.svg" class="w-100" alt="user"></div>
                         </div>
-                        <div class="col">
-                            <div class="gamesLogo d-flex justify-content-center"><img src="assets/img/logo/whiteLogo.png" alt="logo" class="h-100"></div>
+                        <div class="col pe-0 serachInput">
+                            <div class="input-group inputGroup">
+                                <span class="input-group-text border-0 shadow-none rounded-0 rounded-start-2 inputText" id="basic-addon1"><img src="assets/img/fe_search.svg" alt="search" class="w-100 h-100"></span>
+                                <input type="text" class="form-control border-0 shadow-none py-2 inputStyle" placeholder="Serach" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
                         </div>
                         <div class="col-auto notification">
-                            <div class="row mx-0 gap-3 align-items-center">
-                                <div class="col-auto px-0"><a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/img/svg/bell_whire_color.png" class="w-100" alt="bell"></a></div>
+                            <div class="row mx-0 align-items-center">
+                                <div class="col-auto px-0"><a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/img/ci_notification.svg" class="w-100" alt="bell"></a></div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-auto ps-0 navDropdwon">
+                            <div class="dropdown dropDwonNavBar">
+                                <button class="btn border-0 dropdown-toggle dropDwonBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    USDT
+                                </button>
+                                <ul class="dropdown-menu dropMenu">
+                                  <li><a class="dropdown-item dropItem" href="#">Action</a></li>
+                                  <li><a class="dropdown-item dropItem" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item dropItem" href="#">Something else here</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </navbar>
                 <div class="col-12 px-0 flex-fill" data-page-name="indexPage">
-                    <div class="row mx-0">
+                    <div class="row mx-0 indexMainPage">
                         <!-- * main Content -->
+                        <div class="col-12 px-0">
+                            <div class="ouutercard">
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-auto ps-0">
+                                        <a href="javascript:;" class=" buyBtn">Buy</a>
+                                    </div>
+                                    <div class="col px-0 marqeeSection">
+                                        <marquee  direction="left" class="marqueeText">
+                                            BTC_Binance: 21000 <span class="d-inline-flex icon"><img src="assets/img/marqeevector.svg" alt="marquee" class="img-fluid w-100 h-100"></span> <span class="subHeading">255</span> , ETH_Kucoin: 1350 <span class="d-inline-flex icon"><img src="assets/img/marqeevector1.png" alt="marquee" class="img-fluid w-100 h-100"></span> <span class="subHeading subHeading2">133</span>     133, XRP_CoinDCX: 55     1.2
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0">
+                            <div class="row mx-0">
+                                <div class="col-12 px-0 py-2">
+                                    <div class="row mx-0 align-items-center bestSellnav">
+                                        <div class="col-auto px-0">
+                                            <nav>
+                                                <div class="nav nav-tabs border-0 shadow-none navTabs gap-1" id="nav-tab" role="tablist">
+                                                  <button class="nav-link border-0 shadow-none rounded-0 navLink active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                                                  <button class="nav-link border-0 shadow-none rounded-0 navLink" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="col px-0 text-end">
+                                            <a href="javascript:;" class="text-decoration-none align-items-center justify-content-end viewBtn"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0 sellerCard">
+                                    <div class="tab-content tabContent" id="nav-tabContent">
+                                        <div class="tab-pane tabePane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                            <div class="row mx-0">
+                                                <div class="col-4 px-0">
+                                                    <div class="btcCard border-0 shadow-none card">
+                                                        <div class="card-body">
+                                                            <div class="CardContent d-flex align-items-center justify-content-center flex-column">
+                                                                <div class="cardImg">
+                                                                    <img src="assets/img/btc.svg" alt="btc" class="img-fluid w-100 h-100">
+                                                                </div>
+                                                                <div class="cardHeaing pt-2 pb-1">BTC</div>
+                                                                <div class="cardHeaing">$ 0.00152</div>
+                                                                <div class="pera pt-2 ">Binance</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="btcCard btcCard2 border-0 active card">
+                                                        <div class="card-body">
+                                                            <div class="CardContent d-flex align-items-center justify-content-center flex-column">
+                                                                <div class="cardImg">
+                                                                    <img src="assets/img/btc.svg" alt="btc" class="img-fluid w-100 h-100">
+                                                                </div>
+                                                                <div class="cardHeaing pt-2 pb-1">BTC</div>
+                                                                <div class="cardHeaing">$ 0.00152</div>
+                                                                <div class="pera pt-2 ">Binance</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="btcCard border-0 shadow-none card">
+                                                        <div class="card-body">
+                                                            <div class="CardContent d-flex align-items-center justify-content-center flex-column">
+                                                                <div class="cardImg">
+                                                                    <img src="assets/img/btc.svg" alt="btc" class="img-fluid w-100 h-100">
+                                                                </div>
+                                                                <div class="cardHeaing pt-2 pb-1">BTC</div>
+                                                                <div class="cardHeaing">$ 0.00152</div>
+                                                                <div class="pera pt-2 ">Binance</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tabePane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
