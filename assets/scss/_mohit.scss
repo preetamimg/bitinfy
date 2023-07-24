@@ -231,3 +231,19 @@
     }
 }
 // market management page end
+
+// welcomev page start
+.welcomeSection {
+    & .welcomelogo {
+        height: 111px;
+        width: 296px;
+    }
+    & .welcometitle {
+        font-size: 36px;
+        line-height: normal;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $textClr;
+    }
+}
+// welcomev page end
