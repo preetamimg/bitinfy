@@ -3,6 +3,16 @@
         background-color: $bodyBg;
         height: 60px;
         & .innerheader {
+            & .arbitrageAlert{
+                & .heading{
+                    color: $textClr;
+                    text-align: center;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
             & .profile {
             & .userImage {
                 width: 36px;

@@ -433,9 +433,39 @@
     }
 }
 
+// arbitrageadvancescreen
 
 
-
+.arbitrageadvancescreen{
+ & .indexMainPage{
+    & .form{
+        & .cards{
+            & .inputgroup{
+                & .formInput{
+                    color: $text-gray;
+                    font-size: 16px;
+                }
+                & .inputgroupText{
+                    & .passwordText{
+                        & .formSelect{
+                            font-size: 12px;
+                            color: $theme-blue;
+                            & option{
+                                background: $theme-dark;
+                                border: none;
+                                &:hover{
+                                    border: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+}
 
 
 
