@@ -7,7 +7,7 @@
             & .userImage {
                 width: 36px;
                 height: 36px;
-                background: $theme-dark;
+                background: $bodyBg;
                 padding: 5px;
                 display: flex;
                 align-items: center;
@@ -21,10 +21,10 @@
             & .serachInput{
                 & .inputGroup{
                     & .inputText{
-                        background-color:$theme-dark;
+                        background-color:$bodyBg;
                     }
                     & .inputStyle{
-                        background-color:$theme-dark;
+                        background-color:$bodyBg;
                         color: $text-gray;
                         font-family: 'Roboto';
                         font-size: 16px;

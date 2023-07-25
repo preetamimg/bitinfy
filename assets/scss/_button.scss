@@ -24,6 +24,8 @@
         border-radius: 0px 2px 2px 0px;
         background: $theme-green;
         padding: 3px 13px;
+        box-shadow: 1px 1px 5px 0px rgba(24,92,160,0.8);
+
         &.sellBtn{
             background-color: $theme-red;
             font-size: 12px;
