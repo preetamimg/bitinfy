@@ -1,6 +1,6 @@
 @include media-breakpoint(basic) {
     .header {
-        background-color: $black;
+        background-color: $theme-dark;
         height: 60px;
         & .innerheader {
             & .profile {
@@ -188,7 +188,6 @@
             }
         }
         & .offcanvas-body {
-            // background: lighten($black, 0);
             & .innerbody {
                 & .linkBox {
                     & .tagicon {
