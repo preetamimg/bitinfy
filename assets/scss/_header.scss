@@ -1,13 +1,23 @@
 @include media-breakpoint(basic) {
     .header {
-        background-color: $theme-dark;
+        background-color: $bodyBg;
         height: 60px;
         & .innerheader {
+            & .arbitrageAlert{
+                & .heading{
+                    color: $textClr;
+                    text-align: center;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
             & .profile {
             & .userImage {
                 width: 36px;
                 height: 36px;
-                background: $bodyBg;
+                background: $theme-dark;
                 padding: 5px;
                 display: flex;
                 align-items: center;
@@ -21,10 +31,10 @@
             & .serachInput{
                 & .inputGroup{
                     & .inputText{
-                        background-color:$bodyBg;
+                        background-color:$theme-dark;
                     }
                     & .inputStyle{
-                        background-color:$bodyBg;
+                        background-color:$theme-dark;
                         color: $text-gray;
                         font-family: 'Roboto';
                         font-size: 16px;

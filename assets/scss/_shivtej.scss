@@ -109,7 +109,7 @@
                 }
 
                 & .portfolio{
-                    padding: 10px 16px !important;
+                    // padding: 10px 16px !important;
                     & .outterCard{
                       background-color: $theme-dark;
                       border-radius: 7px;
@@ -163,7 +163,7 @@
                     }
                   }
                   & .owlSection{
-                    padding: 10px 16px !important;
+                    // padding: 10px 16px !important;
               
                       & .exchangeOwl{
                           & .owl-stage-outer{
@@ -210,7 +210,7 @@
                       }
                   }
                   & .binanceCard{
-                    padding: 5px 16px !important;
+                    // padding: 5px 16px !important;
                       & .outterCard{
                           background-color: $theme-dark;
                           border-radius: 8px;
@@ -261,7 +261,7 @@
                       }
                   }
                   & .ArbitrageCard{
-                    padding: 5px 16px !important;
+                    // padding: 5px 16px !important;
                     & .outterCard{
                       background-color: $theme-dark;
                       border-radius:5px;
@@ -318,7 +318,7 @@
                   }
               
                   & .newsSection{
-                    padding: 5px 16px !important;
+                    // padding: 5px 16px !important;
                     & .outterCard{
                       background-color: $theme-dark;
                       border-radius:5px;
@@ -357,13 +357,115 @@
 
    
 }
+ .ArbitrageCard{
+    // padding: 5px 16px !important;
+    & .outterCard{
+      background-color: $theme-dark;
+      border-radius:5px;
+      padding: 15px;
+      & .icon{
+          width: 15px;
+          height: 15px;
+      }
+      & .criptoHeading{
+          color:$textClr;
+          
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+      }
+      & .criptoSubheading{
+          color:$theme-blue;
+          font-family:' Roboto';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+      }
+      & .pera{
+          color: $textClr;
+          font-family: Roboto;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+      }
+      & .bitcoinSubheading{
+          color:$text-gray;
+          font-family:' Roboto';
+          font-size: 9px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+      }
+      & .bitcoinHeading{
+          color:$textClr;
+          
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+      }
+      & .buyBtn{
+          font-size: 12px;
+          border-radius: 5px;
+      }
+    }
+  }
+
+.coinPagination{
+    & .outterCard{
+        background-color: $theme-dark;
+        border-radius: 8px;
+        padding: 9px 18px;
+        & .coinHeading{
+            color: $textClr;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .icon{
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+// arbitrageadvancescreen
 
 
-
-
-
-
-
+.arbitrageadvancescreen{
+ & .indexMainPage{
+    & .form{
+        & .cards{
+            & .inputgroup{
+                & .formInput{
+                    color: $text-gray;
+                    font-size: 16px;
+                }
+                & .inputgroupText{
+                    & .passwordText{
+                        & .formSelect{
+                            font-size: 12px;
+                            color: $theme-blue;
+                            & option{
+                                background: $theme-dark;
+                                border: none;
+                                &:hover{
+                                    border: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+}
 
 
 
