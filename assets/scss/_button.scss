@@ -13,3 +13,37 @@
     justify-content: center;
     margin: auto;
 } 
+    .buyBtn{
+        text-decoration: none;
+        color:$white;
+        font-family: 'Roboto';
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0px 2px 2px 0px;
+        background: $theme-green;
+        padding: 3px 13px;
+        &.sellBtn{
+            background-color: $theme-red;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+    }
+.cardHeaingsection{
+    color:$textClr;
+    font-family:' Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .viewBtn{
+    color:$theme-blue;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
