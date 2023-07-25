@@ -306,6 +306,40 @@
         }
       }
     }
+
+    & .newsSection{
+      padding: 5px 16px !important;
+      & .outterCard{
+        background-color: $theme-dark;
+        border-radius:5px;
+        padding: 12px 0px;
+        & .heading{
+            color: $textClr;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+        }
+        & .subHeading{
+            color:$text-gray;
+            font-family: 'Roboto';
+            font-size: 7px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .pera{
+            color:$textClr;
+            font-family: 'Roboto';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+      }
+    }
 }
 
 
