@@ -31,18 +31,19 @@
                 }
             }
         }
-        // &::before{
-        //     position: absolute;
-        //     height: 100%;
-        //     width: 100%;
-        //     content: '';
-        //     background-color: $textClr;
-        //     opacity: 0.5;
-        //     inset: 0;
-        // }
+        &::before{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            background-color: $textClr;
+            opacity: 0.5;
+            inset: 0;
+        }
     }
     .modal-backdrop {
-        background: $textClr !important;
+        // background: $textClr !important;
+        opacity: 0 !important;
     }
 }
 @include media-breakpoint-up(sm) {}

@@ -298,6 +298,15 @@
     & .overflow-auto-hidden {
       overflow: auto hidden !important;
     }
+    &.modal-open{
+      & main {
+        &>.mainInner{
+          &> [data-page-name]{
+            overflow: hidden;
+          }
+        }
+      }
+    }
   }
 }
 
