@@ -1,13 +1,13 @@
 @include media-breakpoint(basic) {
     .header {
-        background-color: $black;
+        background-color: $theme-dark;
         height: 60px;
         & .innerheader {
             & .profile {
             & .userImage {
                 width: 36px;
                 height: 36px;
-                background: $theme2;
+                background: $theme-dark;
                 padding: 5px;
                 display: flex;
                 align-items: center;
@@ -21,18 +21,18 @@
             & .serachInput{
                 & .inputGroup{
                     & .inputText{
-                        background-color: $theme2;
+                        background-color:$theme-dark;
                     }
                     & .inputStyle{
-                        background-color: $theme2;
-                        color: #CAC4D0;
+                        background-color:$theme-dark;
+                        color: $text-gray;
                         font-family: 'Roboto';
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
                         &::placeholder{
-                            color: #CAC4D0;
+                            color:$text-gray;
                             font-family: 'Roboto';
                             font-size: 16px;
                             font-style: normal;
@@ -64,12 +64,10 @@
                 & .dropDwonNavBar{
                     & .dropDwonBtn{
                         border-radius: 4px;
-                        background: $theme2;
-                        box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.12);
-                        // color: rgba(28, 141, 255, 0.60);
-                        color: $theme1;
+                        background: $theme-dark;
+                        color: $theme-blue;
                         text-align: center;
-                        font-family: Roboto;
+                        font-family: 'Roboto';
                         font-size: 10px;
                         font-style: normal;
                         font-weight: 700;
@@ -80,11 +78,11 @@
                     }
                     & .dropMenu{
                         // background-color: rgba(29, 29, 29, 1);
-                        background-color: $theme2;
+                        background-color:$theme-dark;
 
                         & li{
                             & .dropItem{
-                                color: darken($white,20);
+                                color: $text-gray;
                                 font-family: 'Roboto';
                                 font-size: 13px;
                                 font-style: normal;
@@ -93,7 +91,7 @@
                                 transition: all 0.3s ease-in-out;
                                 &:hover{
                                 //    color: rgba(28, 141, 255, 0.60);
-                                    color: $theme1;
+                                    color: $theme-blue;
                                    background-color: transparent;
                                    background-image: none;
 
@@ -190,7 +188,6 @@
             }
         }
         & .offcanvas-body {
-            // background: lighten($black, 0);
             & .innerbody {
                 & .linkBox {
                     & .tagicon {
