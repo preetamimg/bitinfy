@@ -112,19 +112,27 @@
                                             <option value="3" >All</option>
                                             <option value="3" >All</option>
                                         </select>
-                                        <div class="input-group border rounded-3 border-0 me-2">
+                                        <!-- <div class="input-group searchgroup border rounded-3 border-0 me-2" id="searchbar">
                                             <div class="input-group-prepend border-0 ps-1 d-flex align-items-center">
                                             <button id="button-addon4" type="button" class="p-0 bg-transparent border-0 d-inline-flex align-items-center justify-content-center">
                                                 <img src="assets/img/svg/searchicon2.svg" alt="search">
                                             </button>
                                             </div>
                                             <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control searchInput bg-transparent shadow-none border-0">
-                                        </div>
-                                        <div class="d-inline-flex align-items-center gap-3">
-                                            <!-- <span class="d-inline-flex align-items-center justify-content-center">
+                                        </div> -->
+                                        
+                                        <div class="d-flex align-items-center gap-3 justify-content-end">
+                                            <!-- <span class="d-inline-flex align-items-center justify-content-center searchbaricon" onclick="myFunction()">
                                                 <img src="assets/img/svg/searchIcon.svg" alt="search">
                                             </span> -->
-                                        <input class="form-check-input checkBtn shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <div class="searchbox">
+                                                <input type="text"  placeholder="Search" name="search"  class="searchbox-input form-control"  required />
+                                                <!-- <input type="submit" class="searchbox-submit"/> -->
+                                                <span class="searchbox-icon">
+                                                    <img src="assets/img/svg/searchicon2.svg" alt="">
+                                                </span>
+                                            </div>
+                                        <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="" id="">
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +147,7 @@
                                                     BTC
                                                     <span class="coinName">Bitcoin</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="btc" id="btc">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="btc" id="btc">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -151,7 +159,7 @@
                                                     ETH
                                                     <span class="coinName">Ethereum</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="etc" id="etc">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="etc" id="etc">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -163,7 +171,7 @@
                                                     XRP
                                                     <span class="coinName">XRP</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="xrp" id="xrp">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="xrp" id="xrp">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -175,7 +183,7 @@
                                                     TRX
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="trx" id="trx">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="trx" id="trx">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -187,7 +195,7 @@
                                                     SHIB
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="shib" id="shib">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="shib" id="shib">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -199,7 +207,7 @@
                                                     Polkadot
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="polkadot" id="polkadot">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="polkadot" id="polkadot">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -211,7 +219,7 @@
                                                     CHR
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="chr" id="chr">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="chr" id="chr">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -223,7 +231,7 @@
                                                     MANA
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="mana" id="mana">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="mana" id="mana">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -235,7 +243,7 @@
                                                     DOGE
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="doge" id="doge">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="doge" id="doge">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -247,7 +255,7 @@
                                                     ADA
                                                     <span class="coinName">Bitcoin</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="ada" id="ada">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="ada" id="ada">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -259,7 +267,7 @@
                                                     IOTX
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="iotx" id="iotx">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="iotx" id="iotx">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -271,7 +279,7 @@
                                                     ETH
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="eth2" id="eth2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="eth2" id="eth2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -283,7 +291,7 @@
                                                     BTC
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="btc2" id="btc2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="btc2" id="btc2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -295,7 +303,7 @@
                                                     BTC
                                                     <span class="coinName">WazirX</span>
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="btc3" id="btc3">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="btc3" id="btc3">
                                             </div>
                                         </div>
                                     </div>
@@ -310,15 +318,7 @@
                                             <option value="3" >All</option>
                                             <option value="3" >All</option>
                                         </select>
-                                        <div class="search">
-                                            <div class="icon"></div>
-                                            <div class="input">
-                                                <input type="text" placeholder="Search..." id="mysearch">
-                                            </div>
-    
-                                            <span class="clear" onclick="document.getElementById('mysearch').value = ''">x</span>
-                                        </div>
-                                        <input class="form-check-input checkBtn shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
                                 <div class="col-12 tabContentMain px-0">
@@ -331,7 +331,7 @@
                                                     </span>
                                                     Binance
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Binance" id="Binance">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance" id="Binance">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -342,7 +342,7 @@
                                                     </span>
                                                     CoinDCX
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="CoinDCX" id="CoinDCX">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="CoinDCX" id="CoinDCX">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -353,7 +353,7 @@
                                                     </span>
                                                     Wazirx
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Wazirx" id="Wazirx">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Wazirx" id="Wazirx">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -364,7 +364,7 @@
                                                     </span>
                                                     Huobi
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Huobi" id="Huobi">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Huobi" id="Huobi">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -375,7 +375,7 @@
                                                     </span>
                                                     Coinbase
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Coinbase" id="Coinbase">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinbase" id="Coinbase">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -386,7 +386,7 @@
                                                     </span>
                                                     FTX
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="FTX" id="FTX">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="FTX" id="FTX">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -397,7 +397,7 @@
                                                     </span>
                                                     OKX
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="OKX" id="OKX">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="OKX" id="OKX">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -408,7 +408,7 @@
                                                     </span>
                                                     KuCoin
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="KuCoin" id="KuCoin">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="KuCoin" id="KuCoin">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -419,7 +419,7 @@
                                                     </span>
                                                     Coinkuber
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Coinkuber" id="Coinkuber">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinkuber" id="Coinkuber">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -430,7 +430,7 @@
                                                     </span>
                                                     Kraken
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Kraken" id="Kraken">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Kraken" id="Kraken">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -441,7 +441,7 @@
                                                     </span>
                                                     Bitfinex
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Bitfinex" id="Bitfinex">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Bitfinex" id="Bitfinex">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -452,7 +452,7 @@
                                                     </span>
                                                     Binance US
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Binance2" id="Binance2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance2" id="Binance2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -463,7 +463,7 @@
                                                     </span>
                                                     Coinkuber
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Coinkuber2" id="Coinkuber2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinkuber2" id="Coinkuber2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -474,7 +474,7 @@
                                                     </span>
                                                     Kraken
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Kraken2" id="Kraken2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Kraken2" id="Kraken2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -485,7 +485,7 @@
                                                     </span>
                                                     Bitfinex
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Bitfinex2" id="Bitfinex2">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Bitfinex2" id="Bitfinex2">
                                             </div>
                                         </div>
                                         <div class="col-12 px-0">
@@ -496,7 +496,7 @@
                                                     </span>
                                                     Binance US
                                                 </label>
-                                                <input class="form-check-input checkBtn shadow-none" type="radio" name="Binance3" id="Binance3">
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance3" id="Binance3">
                                             </div>
                                         </div>
                                     </div>
@@ -525,5 +525,46 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            var isOpen = false;
+            $(".searchbox-icon").click(function () {
+            if (isOpen == false) {
+            $(".searchbox").addClass("searchbox-open");
+            $(".searchbox-input").focus();
+            isOpen = true;
+                } else {
+            $(".searchbox").removeClass("searchbox-open");
+            $(".searchbox-input").focusout();
+            isOpen = false;
+            }
+            });
+            $(".searchbox-icon").mouseup(function () {
+            return false;
+            });
+            $(".searchbox").mouseup(function () {
+            return false;
+            });
+            $(document).mouseup(function () {
+            if (isOpen == true) {
+                $(".searchbox-icon").css("display", "flex");
+                $(".searchbox-icon").click();
+            }
+            });
+            function buttonUp() {
+            var inputVal = $(".searchbox-input").val();
+            inputVal = $.trim(inputVal).length;
+            if (inputVal !== 0) {
+                $(".searchbox-icon").css("display", "flex");
+            } else {
+                $(".searchbox-input").val("");
+                $(".searchbox-icon").css("display", "flex");
+            }
+            }
+            // $("input").keyup(function () {
+            // buttonUp();
+            // });
+        });
+        </script>
     </body>
 </html>
