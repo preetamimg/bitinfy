@@ -559,10 +559,16 @@
 
 // filter modal start
 .filterModal {
+    // background: rgba($textClr, 0.5);
+    background-color:rgba($textClr, 0.9);
     & .filterModalMain {
-        max-width: 330px;
+        max-width: 350px;
         & .filtercontent {
             background: $theme-dark;
+            & .btn-close {
+                background: none;
+                opacity: 1;
+            }
             & .filtermodalIcon {
                 height: 53px;
                 width: 53px;
@@ -583,3 +589,81 @@
     }
 }
 // filter modal end
+
+.priceDetail {
+    & .priceDetailCard {
+        padding: 15px 15px 25px 8px;
+        background: $theme-dark;
+        & .cardicon {
+            height: 24px;
+            width: 24px;
+        }
+        & .cardTitle {
+            font-size: 18px;
+            color: $textClr;
+            line-height: normal;
+        }
+        & .pricevalue {
+            font-size: 20px;
+            color: $textClr;
+        }
+        & .priceTitle {
+            font-size: 12px;
+            color: rgba($textClr, .05);
+        }
+    }
+    & .comparePrice {
+        font-size: 16px;
+        color: $textClr;
+    }
+    & .pricedetailTable {
+        // background: $theme-dark;
+        // border-collapse: separate;
+        // border-spacing: 0 15px;
+        & .pricedetailHead {
+            border-bottom: 1px solid $dark-border;
+            & th {
+                font-size: 11px;
+                color: $textClr;
+            }
+        }
+        & .priceDetalbody {
+            & .detailRow {
+                border: 1px solid transparent;
+                border-bottom: 1px solid $dark-border;
+                // transition: all 0.3s ease-in-out;
+                &:hover {
+                    border: 1px solid $theme-blue;
+                }
+                & .detailtabletitle {
+                    font-size: 16px;
+                    color: $textClr;
+                    & .detailtableIcon {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                & .detailtableprice {
+                    font-size: 14px;
+                    color: $textClr;
+                }
+                & .detailpricetwo {
+                    font-size: 10px;
+                    // color: rgba($textClr, 0.8);
+                    color: $textClr;
+                }
+                & .tradeNowBtn {
+                    font-size: 12px;
+                    font-weight: 700;
+                    background: $theme-blue;
+                    padding: 5px 6px;
+                    color: $textClr;
+                    border-radius: 5px;
+                }
+            }
+            & .detailRowone {
+                border-top: 1px solid $dark-border;
+            }
+        }
+    }
+}
