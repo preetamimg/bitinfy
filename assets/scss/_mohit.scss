@@ -80,6 +80,119 @@
     }
 }
 
+// search all
+.searchbaricon {
+
+}
+// .searchgroup {
+//     background-color: $bodyBg;
+//     display: none;
+//     transition: all 0.3s ease-in-out;
+//     & .searchInput {
+//         font-size: 16px;
+//         color: $text-gray;
+//         &::placeholder {
+//             font-size: 16px;
+//             color: $text-gray;
+//         }
+//     }
+// }
+.searchbox {
+    position: relative;
+    min-width: 40px;
+    width: 0%;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.searchbox-input {
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding-left: 40px;
+    font-size: 16px;
+    color: $text-gray;
+    &:focus {
+        background: $bodyBg;
+        color: $text-gray;
+    }
+    &::placeholder {
+        font-size: 16px;
+        color: $text-gray;
+    }
+}
+.searchbox-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    font-size: 22px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    // line-height: 50px;
+    cursor: pointer;
+    background-color:transparent;
+    // border-radius: 50%;
+    filter: brightness(1);
+}
+.searchbox-open {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+}
+
+// select all 
+.selectFilter {
+    font-size: 16px;
+    color: $textClr;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../img/svg/filter.svg);
+    padding-right: 16px;
+    background-repeat: no-repeat ;
+    background-position: right center;
+    &:focus-visible {
+        border: 0;
+        outline: none;
+    }
+    & option {
+        font-size: 16px;
+        background:$bodyBg ;
+        color: $textClr;
+        // padding: 10px 15px;
+        height: 10px;
+        width: 30px;
+    }
+}
+
+// buy button all
+.tabelebuyBtn {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: $textClr;
+    background-color:$theme-green ;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+
 // profile page start
 .profile {
     & .innerheader {
@@ -275,29 +388,6 @@
             background-color: $theme-dark;
             border-radius: 10px 10px 0px 0px;
             padding: 8px 22px 8px 19px;
-            & .selectFilter {
-                font-size: 16px;
-                color: $textClr;
-                appearance: none;
-                -moz-appearance: none;
-                -webkit-appearance: none;
-                background-image: url(../img/svg/filter.svg);
-                padding-right: 16px;
-                background-repeat: no-repeat ;
-                background-position: right center;
-                &:focus-visible {
-                    border: 0;
-                    outline: none;
-                }
-                & option {
-                    font-size: 16px;
-                    background:$bodyBg ;
-                    color: $textClr;
-                    // padding: 10px 15px;
-                    height: 10px;
-                    width: 30px;
-                }
-            }
             & .input-group {
                 background-color: $bodyBg;
                 & .searchInput {
@@ -362,3 +452,118 @@
     }
 }
 // welcomev page end
+
+// price page start
+.price {
+    // & .innerheader {
+    //     & .userPrice {
+    //         padding: 6px;
+    //     }
+    // }
+    & .priceCurrancy {
+        font-size: 10px;
+        color: $theme-blue;
+        background: $theme-dark;
+        padding: 10px 4px;
+    }
+    & .pricetab {
+        background:$theme-dark;
+        padding: 4px;
+        & .pricetaBtn {
+            width: 116px;
+            font-size: 14px;
+            color: $text-gray;
+            padding: 6px 0;
+            font-weight: 700;
+            &.active {
+                background:$theme-green ;
+                color: $textClr;
+            }
+        }
+        & .bestsellBtn {
+            &.active {
+                background:$theme-red;
+                color: $textClr;
+            }
+        }
+    }
+    & .priceTable {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        & .tablerow {
+            & th, td {
+                background: $theme-dark;
+            }
+            // & td {
+            //     background: $theme-dark;
+            // }
+        }
+        & .tableData {
+            // &::before {
+            //     line-height:0px;
+            //     content:"-";
+            //     color:$bodyBg; /* to hide text */
+            //     display:block;
+            // }
+            & .tableCard {
+                & .tableIcon {
+                    height: 31px;
+                    width: 31px;
+                }
+                & .tablecoin {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $textClr;
+                }
+                & .tablecoinName {
+                    font-size: 12px;
+                    color: $theme-blue;
+                }
+                & .coinrate {
+                    font-size: 14px;
+                    color: $textClr;
+                }
+                & .coinratetwo {
+                    font-size: 10px;
+                    color: $textClr;
+                }
+                & .cointile {
+                    font-size: 14px;
+                    color: $textClr;
+                }
+            }
+        }
+        & .pricetableHead {
+            font-size: 11px;
+            color: $textClr;
+            & .selectFilter {
+                font-size: 11px;
+                color: $textClr;
+                & option {
+                    font-size: 11px;
+                    color: $textClr;
+                }
+            }
+        }
+        & .tableIcon {
+
+        }
+    }
+    & .bestsellContent {
+        & .tabelebuyBtn {
+            background: $theme-red;
+        }
+    }
+}
+// price page end
+
+// filter modal start
+.filterModal {
+    & .filterModalMain {
+        max-width: 330px;
+        & .filtercontent {
+            background: $theme-dark;
+        }
+    }
+}
+// filter modal end
