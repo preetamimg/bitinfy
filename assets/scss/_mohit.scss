@@ -563,6 +563,22 @@
         max-width: 330px;
         & .filtercontent {
             background: $theme-dark;
+            & .filtermodalIcon {
+                height: 53px;
+                width: 53px;
+            }
+            & .filterTitle {
+                font-size: 18px;
+                font-weight: 500;
+                color: $textClr;
+            }
+            & .filterBtn {
+                font-size: 16px;
+                font-weight: 700;
+                background-color: $theme-blue;
+                color: $textClr;
+                padding: 11px 82px;
+            }
         }
     }
 }
