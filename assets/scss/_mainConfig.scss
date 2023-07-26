@@ -219,7 +219,10 @@
       z-index: 1000;
     }
   }
-
+#root, .App{
+  height: 100vh;
+  overflow: hidden;
+}
 
   body {
     position: fixed !important;
