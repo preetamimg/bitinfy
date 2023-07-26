@@ -54,12 +54,14 @@ $light-bg: #{var(--light-bg)};
         width: 7px;
     }
 }
+
 // heading all page
 .innerheader {
     & .title {
         font-size: 22px;
     }
 }
+
 // switch all
 .switchMain {
     & .switchLable {
@@ -76,6 +78,13 @@ $light-bg: #{var(--light-bg)};
         background-repeat: no-repeat;
     }
 }
+
+// star icon 
+.starIcon {
+    height: 17px;
+    width: 15px;
+}
+
 // check button all
 .checkBtn {
     height: 20px;
@@ -584,14 +593,14 @@ $light-bg: #{var(--light-bg)};
                 & .marketlabel {
                     font-size: 16px;
                     padding: 14px 0 14px 19px;
-                    // color: $textClr;
+                    color: $textClr;
                     & .marketLabelIcon {
                         height: 26px;
                         width: 26px;
                     }
                     & .coinName {
                         font-size: 12px;
-                        color: rgba($light-bg, 0.9);
+                        color:$light-bg;
                     }
                 }
             }
@@ -862,10 +871,6 @@ $light-bg: #{var(--light-bg)};
         }
         & .tabContentMain {
             background-color: $theme-dark;
-            & .starIcon {
-                height: 17px;
-                width: 15px;
-            }
         }
     }
 }
