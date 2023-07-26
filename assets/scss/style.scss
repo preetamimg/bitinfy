@@ -154,6 +154,7 @@
   --themeing4: #E96464;
   --text-gray: #CAC4D0;
   --darborder: #303030;
+  --light-bg:#D9D9D9B2;
 }
 
 .lightMode{
@@ -176,6 +177,7 @@ $theme-green: #{var(--themeing3)};
 $theme-red: #{var(--themeing4)};
 $text-gray: #{var(--text-gray)};
 $dark-border: #{var(--darborder)};
+$light-bg: #{var(--light-bg)};
 
 
 

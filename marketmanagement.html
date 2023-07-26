@@ -106,31 +106,37 @@
                             <div class="tab-pane fade show mx-0 active row coinTabContent" id="nav-coins" role="tabpanel" aria-labelledby="nav-coins-tab" tabindex="0">
                                 <div class="col-12 py-2 px-0">
                                     <div class="tabfilter d-flex align-items-center justify-content-between gap-2">
-                                        <select name="" id="" class="border-0 bg-transparent selectFilter">
+                                        <!-- <select name="" id="" class="border-0 bg-transparent selectFilter">
                                             <option value="1" selected>All</option>
                                             <option value="2" >All</option>
                                             <option value="3" >All</option>
                                             <option value="3" >All</option>
-                                        </select>
-                                        <!-- <div class="input-group searchgroup border rounded-3 border-0 me-2" id="searchbar">
-                                            <div class="input-group-prepend border-0 ps-1 d-flex align-items-center">
-                                            <button id="button-addon4" type="button" class="p-0 bg-transparent border-0 d-inline-flex align-items-center justify-content-center">
-                                                <img src="assets/img/svg/searchicon2.svg" alt="search">
-                                            </button>
+                                        </select> -->
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            All
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterup.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
                                             </div>
-                                            <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control searchInput bg-transparent shadow-none border-0">
-                                        </div> -->
-                                        
+                                        </div>
                                         <div class="d-flex align-items-center gap-3 justify-content-end">
                                             <!-- <span class="d-inline-flex align-items-center justify-content-center searchbaricon" onclick="myFunction()">
                                                 <img src="assets/img/svg/searchIcon.svg" alt="search">
                                             </span> -->
-                                            <div class="searchbox">
-                                                <input type="text"  placeholder="Search" name="search"  class="searchbox-input form-control"  required />
-                                                <!-- <input type="submit" class="searchbox-submit"/> -->
-                                                <span class="searchbox-icon">
-                                                    <img src="assets/img/svg/searchicon2.svg" alt="">
-                                                </span>
+                                            <div class="search-wrapper position-relative">
+                                                <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
+                                                    <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Type to search" />
+                                                    <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
+                                                        <span class="d-inline-flex align-items-center justify-content-center">
+                                                            <img src="assets/img/svg/searchicon2.svg" alt="search">
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
                                             </div>
                                         <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="" id="">
                                         </div>
@@ -312,12 +318,28 @@
                             <div class="tab-pane fade coinTabContent row mx-0" id="nav-exchanges" role="tabpanel" aria-labelledby="nav-exchanges-tab" tabindex="0">
                                 <div class="col-12 py-2 px-0">
                                     <div class="tabfilter d-flex align-items-center justify-content-between px-4">
-                                        <select name="" id="" class="border-0 bg-transparent selectFilter">
-                                            <option value="1" selected>All</option>
-                                            <option value="2" >All</option>
-                                            <option value="3" >All</option>
-                                            <option value="3" >All</option>
-                                        </select>
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            All
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterup.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="search-wrapper position-relative">
+                                            <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
+                                                <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Type to search" />
+                                                <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
+                                                    <span class="d-inline-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/searchicon2.svg" alt="search">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
+                                        </div>
                                         <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                                     </div>
                                 </div>
@@ -525,46 +547,19 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-        <script>
-        $(document).ready(function () {
-            var isOpen = false;
-            $(".searchbox-icon").click(function () {
-            if (isOpen == false) {
-            $(".searchbox").addClass("searchbox-open");
-            $(".searchbox-input").focus();
-            isOpen = true;
-                } else {
-            $(".searchbox").removeClass("searchbox-open");
-            $(".searchbox-input").focusout();
-            isOpen = false;
-            }
-            });
-            $(".searchbox-icon").mouseup(function () {
-            return false;
-            });
-            $(".searchbox").mouseup(function () {
-            return false;
-            });
-            $(document).mouseup(function () {
-            if (isOpen == true) {
-                $(".searchbox-icon").css("display", "flex");
-                $(".searchbox-icon").click();
-            }
-            });
-            function buttonUp() {
-            var inputVal = $(".searchbox-input").val();
-            inputVal = $.trim(inputVal).length;
-            if (inputVal !== 0) {
-                $(".searchbox-icon").css("display", "flex");
-            } else {
-                $(".searchbox-input").val("");
-                $(".searchbox-icon").css("display", "flex");
-            }
-            }
-            // $("input").keyup(function () {
-            // buttonUp();
-            // });
-        });
-        </script>
+        <!-- <script>
+            function searchToggle(obj, evt){
+                var container = $(obj).closest('.search-wrapper');
+                if(!container.hasClass('active')){
+                    container.addClass('active');
+                    evt.preventDefault();
+                }
+                else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                    container.removeClass('active');
+                    // clear input
+                    container.find('.search-input').val('');
+                }
+        }
+        </script> -->
     </body>
 </html>

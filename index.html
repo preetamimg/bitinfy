@@ -81,16 +81,16 @@
                                 <span class="input-group-text border-0 shadow-none rounded-0 rounded-start-2 inputText" id="basic-addon1"><img src="assets/img/fe_search.svg" alt="search" class="w-100 h-100"></span>
                                 <input type="text" class="form-control border-0 shadow-none py-2 ps-0 inputStyle" placeholder="Serach" aria-label="Username" aria-describedby="basic-addon1">
                             </div> -->
-                            <div class="search-wrapper position-relative">
-                                <div class="input-holder d-flex align-items-center">
-                                    <input type="text" class="search-input border-0" placeholder="Type to search" />
-                                    <button class="search-icon d-inline-flex align-items-center justify-content-center" onclick="searchToggle(this, event);">
+                            <div class=" position-relative search-wrapper">
+                                <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
+                                    <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Search" />
+                                    <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
                                         <span class="d-inline-flex align-items-center justify-content-center">
                                             <img src="assets/img/svg/searchicon2.svg" alt="search">
                                         </span>
                                     </button>
                                 </div>
-                                <span class="close" onclick="searchToggle(this, event);"></span>
+                                <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
                             </div>
                         </div>
                         <div class="col-auto notification">
@@ -688,16 +688,16 @@
         <script>
             function searchToggle(obj, evt){
                 var container = $(obj).closest('.search-wrapper');
-        if(!container.hasClass('active')){
-            container.addClass('active');
-            evt.preventDefault();
+                if(!container.hasClass('active')){
+                    container.addClass('active');
+                    evt.preventDefault();
+                }
+                else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                    container.removeClass('active');
+                    // clear input
+                    container.find('.search-input').val('');
+                }
         }
-        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-            container.removeClass('active');
-            // clear input
-            container.find('.search-input').val('');
-        }
-}
         </script>
     </body>
 </html>
