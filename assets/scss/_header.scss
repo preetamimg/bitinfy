@@ -1,8 +1,18 @@
 @include media-breakpoint(basic) {
     .header {
-        background-color: $theme-dark;
+        background-color: $bodyBg;
         height: 60px;
         & .innerheader {
+            & .arbitrageAlert{
+                & .heading{
+                    color: $textClr;
+                    text-align: center;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
             & .profile {
             & .userImage {
                 width: 36px;
@@ -77,10 +87,11 @@
                         }
                     }
                     & .dropMenu{
-                        // background-color: rgba(29, 29, 29, 1);
+                        width: 50px !important;
                         background-color:$theme-dark;
 
                         & li{
+                            border-bottom: 1px solid $dark-border;
                             & .dropItem{
                                 color: $text-gray;
                                 font-family: 'Roboto';
