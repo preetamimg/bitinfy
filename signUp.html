@@ -121,9 +121,16 @@
                                             <div class="row mx-0 gap-2">
                                                 <div class="col-12">
                                                     <div class="cards">
-                                                        <div class="form-floating">
+                                                        <!-- <div class="form-floating">
                                                             <input type="tel" class="form-control shadow-none bg-transparent" id="floatingInput" value="" placeholder="Verification Code">
                                                             <label for="floatingInput" class=" "><span>Verification Code</span></label>
+                                                        </div> -->
+                                                        <div class="verificationHeading pb-2">Verification Code</div>
+                                                        <div class="otpInputMain d-flex justify-content-center gap-3">
+                                                            <input id="codeBox1" class="optInput bg-transparent rounded-2 form-control shadow-none" type="tel" max="1" step="1" aria-label="first digit"  onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" />
+                                                            <input id="codeBox2" class="optInput bg-transparent rounded-2 form-control shadow-none" type="tel" max="1" step="1" aria-label="second digit"  onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)" />
+                                                            <input id="codeBox3" class="optInput bg-transparent rounded-2 form-control shadow-none" type="tel" max="1" step="1" aria-label="third digit"  onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)" />
+                                                            <input id="codeBox4" class="optInput bg-transparent rounded-2 form-control shadow-none" type="tel" max="1" step="1" aria-label="fourth digit"  onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -168,7 +175,7 @@
                                                 </div>
                                                 <div class="col-10 mx-auto text-center"><button type="button" class="customBtn border-0 shadow-none text-nowrap p-0 w-100">Create Account</button></div>
                                                 <!-- <div class="col-12 text-center dontaccount">Dont have an Account?<a href="javascript:;" class="text-decoration-none"> Signup</a></div> -->
-                                                <div>
+                                                <!-- <div> -->
                                             </div>
                                         </form>
                                     </div>
@@ -253,5 +260,35 @@
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <script>
+            function getCodeBoxElement(index) {
+                return document.getElementById('codeBox' + index);
+            }
+            function onKeyUpEvent(index, event) {
+                const eventCode = event.which || event.keyCode;
+                if (getCodeBoxElement(index).value.length === 1) {
+                    if (index !== 4) {
+                        getCodeBoxElement(index+ 1).focus();
+                    } 
+                    else {
+                        getCodeBoxElement(index).blur();
+                        // Submit code
+                        console.log('submit code ');
+                    }
+                }
+                if (eventCode === 8 && index !== 1) {
+                    getCodeBoxElement(index - 1).focus();
+                }
+            }
+            function onFocusEvent(index) {
+      for (item = 1; item < index; item++) {
+       const currentElement = getCodeBoxElement(item);
+       if (!currentElement.value) {
+          currentElement.focus();
+          break;
+       }
+      }
+    }
+        </script>
     </body>
 </html>

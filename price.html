@@ -90,7 +90,20 @@
                                     </span>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="javascript::" class="priceCurrancy rounded-1">USDT</a>
+                                    <div class="dropdown currancyDrop currancyDroptwo">
+                                        <button class="dropdown-toggle currancyDropbtn  border-0 rounded-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            USDT
+                                        </button>
+                                        <ul class="dropdown-menu currancymenu rounded-top-0 w-auto p-0">
+                                            <li><a class="dropdown-item currancy border-0" href="javascript:;">USDT</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">INR</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">EURO</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">BTC</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">ETH</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">XRP</a></li>
+                                            <li><a class="dropdown-item currancy" href="javascript:;">GBP</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="col-auto px-0">
                                     <a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"  data-bs-toggle="modal" data-bs-target="#filtermodal">
@@ -622,6 +635,35 @@
                             </div>
                         </div>
                     </div>
+                    <!-- filter modal start -->
+                    <div class="modal fade filterModal position-absolute" id="filtermodal" tabindex="-1" aria-labelledby="filtermodal" aria-hidden="true">
+                        <div class="modal-dialog filterModalMain  modal-dialog-centered">
+                            <div class="modal-content filtercontent">
+                                <div class="modal-header pb-0 border-0">
+                                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="assets/img/table/redclose.svg" alt="close">
+                                    </button>
+                                </div>
+                                <div class="modal-body pt-1">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div class="filtermodalIcon d-flex align-items-center mx-auto justify-content-center rounded-pill">
+                                                <img src="assets/img/table/filterinnericon.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 filterTitle text-center pt-2">Set Filter </div>
+                                        <div class="co1-12 text-center d-flex align-items-center pt-4 justify-content-center">
+                                            <a href="javascript:;" class="text-decoration-none filterBtn rounded-3">View Filter</a>
+                                        </div>
+                                        <div class="co1-12 text-center d-flex align-items-center pt-3 justify-content-center">
+                                            <a href="javascript:;" class="text-decoration-none filterBtn rounded-3">Reset Filter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filter modal end -->
                 </div>
                 </div>
                 <!-- <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
@@ -638,36 +680,6 @@
                 </button>  -->
             </div>
             
-            <!-- filter modal start -->
-            filtermodal
-            <div class="modal fade filterModal" id="filtermodal" tabindex="-1" aria-labelledby="filtermodal" aria-hidden="true">
-                <div class="modal-dialog filterModalMain  modal-dialog-centered">
-                    <div class="modal-content filtercontent">
-                        <div class="modal-header pb-0 border-0">
-                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="assets/img/table/redclose.svg" alt="close">
-                            </button>
-                        </div>
-                        <div class="modal-body pt-1">
-                            <div class="row justify-content-center">
-                                <div class="col-12">
-                                    <div class="filtermodalIcon d-flex align-items-center mx-auto justify-content-center rounded-pill">
-                                        <img src="assets/img/table/filterinnericon.svg" alt="filter" class="h-100 w-100 img-fluid">
-                                    </div>
-                                </div>
-                                <div class="col-12 filterTitle text-center pt-2">Set Filter </div>
-                                <div class="co1-12 text-center d-flex align-items-center pt-4 justify-content-center">
-                                    <a href="javascript:;" class="text-decoration-none filterBtn rounded-3">View Filter</a>
-                                </div>
-                                <div class="co1-12 text-center d-flex align-items-center pt-3 justify-content-center">
-                                    <a href="javascript:;" class="text-decoration-none filterBtn rounded-3">Reset Filter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- filter modal end -->
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
