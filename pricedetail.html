@@ -123,29 +123,37 @@
                                     <table class="table pricedetailTable rounded-2 align-middle">
                                         <thead class="pricedetailHead align-middle">
                                             <tr>
-                                                <th scope="col" class="border-0 ps-5">
-                                                    Exchange
-                                                    <!-- <div>
-                                                        <div></div>
-                                                        <div>
-                                                            <a href="javascript:;">
-                                                                <img src="assets/" alt="">
+                                                <th scope="col" class="border-0 rounded-start-2  ps-4">
+                                                    <div class="filterall d-inline-flex align-items-center gap-1">
+                                                        Coin
+                                                        <div class="d-inline-flex flex-column filterImgs">
+                                                            <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                                <img src="assets/img/svg/filterup.svg" alt="filter" class="h-100 w-100 img-fluid">
                                                             </a>
-                                                        </div> -->
-                                                    <!-- </div> -->
-                                                    <!-- <select name="" id="" class="border-0 bg-transparent selectFilter">
-                                                        <option value="1" selected>Exchange</option>
-                                                        <option value="2" >All</option>
-                                                        <option value="3" >All</option>
-                                                        <option value="3" >All</option>
-                                                    </select> -->
+                                                            <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                                <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </th>
-                                                <th scope="col" class="border-0">
+                                                <th scope="col" class="border-0 ">
                                                     Current Price
                                                     <br>
-                                                    24 hrs Vol.
+                                                    <div class="filterall d-inline-flex align-items-center gap-1">
+                                                        24 hrs Vol.
+                                                        <div class="d-inline-flex flex-column filterImgs">
+                                                            <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                                <img src="assets/img/svg/filterup.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                            </a>
+                                                            <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                                <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </th>
-                                                <th scope="col" class="border-0">Buy/Sell</th>
+                                                <th scope="col" class="border-0 border rounded-end-2">
+                                                    Buy/Sell
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody class="priceDetalbody">
@@ -163,7 +171,7 @@
                                                     <div class="detailpricetwo ps-2">$ 13,781</div>
                                                 </td>
                                                 <td>
-                                                    <a href="javascript:;" class="tradeNowBtn">Trade Now</a>
+                                                    <a href="javascript:;" class="tradeNowBtn"  data-bs-toggle="offcanvas" data-bs-target="#filteroffcanwas" aria-controls="filteroffcanwas">Trade Now</a>
                                                 </td>
                                             </tr>
                                             <tr class="detailRow">
@@ -392,6 +400,60 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- filter offcanvas start  -->
+                        <div class="offcanvas offcanvas-bottom filterOffcanvas position-absolute  rounded-top-4" data-bs-scroll="true" tabindex="-1" id="filteroffcanwas" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header  rounded-top-4 px-4">
+                                <div class="offcanvas-title d-flex align-items-center justify-content-center w-100" id="filteroffcanwas">Sort By</div>
+                                <button type="button" class="btn-close p-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <img src="assets/img/svg/closered.svg" alt="close" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                            <div class="offcanvas-body p-0 pb-4">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0 filtermain">
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            Current Price
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons filterIconTheme align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterUpblue.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0 filtermain">
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            24 hrs. Vol.
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons filterIconTheme align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterUpblue.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0 filtermain">
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            Exchange 
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons filterIconTheme align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterUpblue.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filter offcanvas end  -->
                 </div>
                 </div>
                 <!-- <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
