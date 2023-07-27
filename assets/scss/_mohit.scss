@@ -508,6 +508,16 @@ body {
     width: 23px;
 }
 
+// border line
+.bordereline {
+    background: $dark-border;
+    height: 1px;
+    opacity: 1;
+    width: 92%;
+}
+
+
+
 
 // profile page start
 .profile {
@@ -877,6 +887,19 @@ body {
             }
         }
     }
+    &.alertmodal {
+        & .filterModalMain {
+            & .filtercontent {
+                & .filterBtn {
+                    background: $theme-green;
+                    padding: 8px 108px;
+                    &.sell {
+                        background: $theme-red;
+                    }
+                }
+            }
+        }
+    }
 }
 // filter modal end
 
@@ -968,6 +991,33 @@ body {
     }
 }
 // price detail page end
+
+// price search page start
+.priceSearch {
+    & .inputradioMain {
+        background-color: $theme-dark;
+        & .radiobuy {
+            border: 1px solid $dark-border;
+            background:none;
+            height: 20px;
+            width: 20px;
+            &:checked {
+                background: url(../img/svg/radio.svg) no-repeat;
+                border-color: $theme-blue;
+                background-position: center;
+                &~ label {
+                    color: $theme-blue;
+                }
+            }
+        }
+        & .labelbuy {
+            font-size: 16px;
+            color: $text-gray;
+            padding-top: 2px;
+        }
+    }
+}
+// price search page end
 
 // select coin section start
 .selectCoin {
@@ -1206,12 +1256,6 @@ body {
                 font-weight: 500;
                 background-color: $bodyBg;
             }
-            & .bordereline {
-                background: $dark-border;
-                height: 1px;
-                opacity: 1;
-                width: 92%;
-            }
             & .totalInverstmenttitle {
                 font-size: 12px;
                 color: $light-bg;
@@ -1250,5 +1294,151 @@ body {
             }
         }
     }
+    
 }
 // portfolio page end
+
+// create portfolio page start
+.createPortfolio {
+    & .inputgroupText {
+        font-size: 10px;
+        color: $text-gray;
+    }
+    & .currancyDrop {
+        & .currancyDropbtn {
+            font-size: 10px;
+            background: transparent;
+        }
+    }
+}
+// create portfolio page end
+
+// alert page start
+.alertPage {
+    & .alertTab {
+        background-color: $theme-dark;
+        & .alertbtn {
+            font-size:14px ;
+            width: 116px;
+            font-weight: 700;
+            color: $text-gray;
+            &.active {
+                background-color: $theme-blue;
+                color: $textClr;
+            }
+        }
+    }
+    & .PriceAccordion {
+        & .activeAlertBtn {
+            background: $theme-dark;
+            font-size: 16px;
+            color: $text-gray;
+            border-radius: 8px;
+            &::after {
+                background: url(../img/svg/accordionicon.svg) no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 9px;
+                width: 16px;
+            }
+            &:not(.collapsed) {
+                color: $textClr;
+                border-radius: 8px 8px 0 0;
+            }
+        }
+        & .activeAlertHeader {
+            margin-top: 2px;
+            background-color: $theme-dark;
+            & .AlertheaderTitle {
+                font-size: 11px;
+                color: $textClr;
+                line-height: normal;
+            }
+        }
+        & .activeAlertCard {
+            background-color: $theme-dark;
+            & .buyAlert {
+                font-size: 8px;
+                color: $textClr;
+                background: $theme-green;
+                padding: 4px 22px;
+                &.sellAlert {
+                    background: $theme-red;
+                }
+            }
+            & .editIcon {
+                height: 14px;
+                width: 14px;
+            }
+            & .timedate {
+                font-size: 9px;
+                color: $light-bg;
+            }
+            & .alertCoinIcon {
+                height: 30px;
+                width: 30px;
+            }
+            & .alertCoinName {
+                font-size: 16px;
+                color: $textClr;
+            }
+            & .alertCoinTitle {
+                font-size: 10px;
+                color: $textClr;
+                margin: 2px;
+            }
+            & .alertCoinPrice {
+                font-size: 14px;
+                color: $textClr;
+            }
+            & .alertCoin {
+                font-size: 12px;
+                color: $textClr;
+                margin-top: 2px;
+                & .tradeNow {
+                    font-size: 8px;
+                    color: $theme-blue;
+                }
+            }
+            & .tradeImg {
+                height: 10px;
+                width: 19px;
+                margin-top: 4px;
+            }
+            & .buyfrom {
+                font-size: 12px;
+                color: $light-bg;
+            }
+            & .arbitragercoiname {
+                font-size: 12px;
+                color: $textClr;
+            }
+        }
+    }
+}
+// alert page end
+
+// set price alert page start
+.setpriceAlert {
+    & .currentprice {
+        font-size: 15px;
+        color: $text-gray;
+        font-weight: 500;
+    }
+    & .currentpriceTotal {
+        min-width: 46px;
+        border-bottom: 1px solid $dark-border;
+    }
+    & .applyBtn {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    // & .currentpriceUsdt {
+    //     font-size: 15px;
+    //     color: $textClr;
+    // }
+}
+// set price alert page end
+
+// exchange detail page start
+// exchange detail page end

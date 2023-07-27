@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main class="container-fluid arbitrageSearch priceSearch">
+        <main class="container-fluid arbitrageSearch">
             <div class="row mainInner">
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
@@ -79,7 +79,7 @@
                                     <div class="icon"><img src="assets/img/eva_arrow.svg" alt="evaarrow" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col">
-                                    <div class="heading">Advanced Arbitrage Search</div>
+                                    <div class="heading">Set Arbitage Alert</div>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                                             <div class="input-group inputgroup">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="BTC, ETH, XRP ..." placeholder="Pair">
-                                                    <label for="floatingInput23" class=" "><span>Coins</span></label>
+                                                    <label for="floatingInput23" class=" "><span>Pair</span></label>
                                                 </div>
                                                 <span class="input-group-text bg-transparent border-start-0 inputgroupText">
                                                     <div class="passwordText w-auto ">  
@@ -111,26 +111,63 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="cards">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="Binance , Coinbase , Karken..." placeholder="Binance , Coinbase , Karken...">
-                                                <label for="floatingInput" class=" "><span>Exchanges</span></label>
+                                        <div class="row mx-0">
+                                            <div class="col-6 ps-0 pe-1">
+                                                <div class="col-12">
+                                                    <div class="cards">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="Exchanges" placeholder="Exchanges">
+                                                            <label for="floatingInput" class=" "><span>Buy From</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 pe-0 ps-1">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="cards position-relative">
+                                                            <div class="input-group inputgroup">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="Exchanges" placeholder="Exchanges">
+                                                                    <label for="floatingInput23" class=" "><span>Sell From</span></label>
+                                                                </div>
+                                                                <!-- <span class="input-group-text bg-transparent border-start-0 inputgroupText">
+                                                                    <div class="passwordText w-auto ">  
+                                                                        <select class="form-select formSelect border-0 h-100 form-control shadow-none  bg-transparent rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
+                                                                            <option selected>USDT</option>
+                                                                            <option value="1">USDT</option>
+                                                                            <option value="2">india</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="inputradioMain d-flex align-items-center justify-content-between p-2 px-4 rounded-3">
-                                            <div class="form-check d-inline-flex align-items-center gap-2">
-                                                <input class="form-check-input radiobuy rounded-pill shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                                <label class="form-check-label labelbuy" for="flexRadioDefault1">
-                                                    Buy
-                                                </label>
-                                            </div>
-                                            <div class="form-check d-inline-flex align-items-center gap-2">
-                                                <input class="form-check-input radiobuy rounded-pill shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                <label class="form-check-label labelbuy" for="flexRadioDefault2">
-                                                    Sell
-                                                </label>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="cards position-relative">
+                                                    <div class="input-group inputgroup">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="5" placeholder="Min. Profit (Est.)">
+                                                            <label for="floatingInput23" class=" "><span>Min. Profit (Est.)</span></label>
+                                                        </div>
+                                                        <span class="input-group-text bg-transparent border-start-0 inputgroupText">
+                                                            <!-- <div class="passwordText w-auto ">  
+                                                                <select class="form-select formSelect border-0 h-100 form-control shadow-none  bg-transparent rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
+                                                                    <option selected>USDT</option>
+                                                                    <option value="1">USDT</option>
+                                                                    <option value="2">india</option>
+                                                                </select>
+                                                            </div> -->
+                                                            %
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

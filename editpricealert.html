@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main class="container-fluid arbitrageSearch priceSearch">
+        <main class="container-fluid createPortfolio setpriceAlert">
             <div class="row mainInner">
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
@@ -79,7 +79,7 @@
                                     <div class="icon"><img src="assets/img/eva_arrow.svg" alt="evaarrow" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col">
-                                    <div class="heading">Advanced Arbitrage Search</div>
+                                    <div class="heading">Set Price Alert</div>
                                 </div>
                             </div>
                         </div>
@@ -91,57 +91,99 @@
                         <div class="col-12 ">
                             <form action="" class="form">
                                 <div class="row mx-0 gap-2">
+                                    <div class="d-flex align-items-center cards py-1 px-0">
+                                        <a href="javascript" class="buyBtn px-3">Buy</a>
+                                    </div>
                                     <div class="col-12">
+                                        <div class="row cards p-0">
+                                            <div class="col-6 px-0">
+                                                <div class="cards position-relative">
+                                                    <div class="input-group inputgroup">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="Select Coin" placeholder="Select Coin">
+                                                            <label for="floatingInput23" class=" "><span>Coins</span></label>
+                                                        </div>
+                                                        <span class="input-group-text bg-transparent border-start-0 inputgroupText">
+                                                            <div class="passwordText w-auto ">  
+                                                                <!-- <select class="form-select formSelect border-0 h-100 form-control shadow-none  bg-transparent rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
+                                                                    <option selected>USDT</option>
+                                                                    <option value="1">USDT</option>
+                                                                    <option value="2">india</option>
+                                                                </select> -->
+                                                                <div class="dropdown currancyDrop">
+                                                                    <button class="dropdown-toggle currancyDropbtn  border-0 rounded-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        USDT
+                                                                    </button>
+                                                                    <ul class="dropdown-menu currancymenu rounded-top-0 w-auto p-0">
+                                                                        <li><a class="dropdown-item currancy border-0" href="javascript:;">USDT</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">INR</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">EURO</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">BTC</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">ETH</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">XRP</a></li>
+                                                                        <li><a class="dropdown-item currancy" href="javascript:;">GBP</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ps-0 pe-1">
+                                                <div class="col-12">
+                                                    <div class="cards">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="Select Exchange" placeholder="Select Exchange">
+                                                            <label for="floatingInput" class=" "><span>Exchanges</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <div class="currentprice">Current Price:</div>
+                                            <div class="currentprice currentpriceTotal border-0">23497</div>
+                                            <div class="currentprice">USDT</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
                                         <div class="cards position-relative">
                                             <div class="input-group inputgroup">
                                                 <div class="form-floating">
-                                                    <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="BTC, ETH, XRP ..." placeholder="Pair">
-                                                    <label for="floatingInput23" class=" "><span>Coins</span></label>
+                                                    <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="0" placeholder="0">
+                                                    <label for="floatingInput23" class=" "><span>Alert Price</span></label>
                                                 </div>
                                                 <span class="input-group-text bg-transparent border-start-0 inputgroupText">
-                                                    <div class="passwordText w-auto ">  
+                                                    <!-- <div class="passwordText w-auto ">  
                                                         <select class="form-select formSelect border-0 h-100 form-control shadow-none  bg-transparent rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
                                                             <option selected>USDT</option>
                                                             <option value="1">USDT</option>
                                                             <option value="2">india</option>
                                                         </select>
-                                                    </div>
+                                                    </div> -->
+                                                    USDT
                                                 </span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 px-0">
                                         <div class="cards">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="Binance , Coinbase , Karken..." placeholder="Binance , Coinbase , Karken...">
-                                                <label for="floatingInput" class=" "><span>Exchanges</span></label>
+                                                <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="" placeholder="0">
+                                                <label for="floatingInput" class=" "><span>Note</span></label>
                                             </div>
                                         </div>
+                                        
                                     </div>
-                                    <div class="col-12">
-                                        <div class="inputradioMain d-flex align-items-center justify-content-between p-2 px-4 rounded-3">
-                                            <div class="form-check d-inline-flex align-items-center gap-2">
-                                                <input class="form-check-input radiobuy rounded-pill shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                                <label class="form-check-label labelbuy" for="flexRadioDefault1">
-                                                    Buy
-                                                </label>
-                                            </div>
-                                            <div class="form-check d-inline-flex align-items-center gap-2">
-                                                <input class="form-check-input radiobuy rounded-pill shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                <label class="form-check-label labelbuy" for="flexRadioDefault2">
-                                                    Sell
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex mx-auto  justify-content-center mt-5">
-                                        <a href="javascript:;" class="applyBtn">Apply</a>
+                                    <div class="col-5 mx-auto mt-5">
+                                        <a href="javascript:;" class="applyBtn d-flex align-items-center justify-content-center">Apply</a>
                                     </div>  
                                 </div>
                                 
                             </form>
                         </div>
-
                     </div>
                 </div>
                 <!-- <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
