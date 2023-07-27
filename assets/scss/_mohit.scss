@@ -37,6 +37,25 @@ $light-bg: #{var(--light-bg)};
 
 @include media-breakpoint-down(sm) {}
 
+
+body {
+    &.modal-open {
+        & .modalOverlay {
+            position: fixed;
+            z-index: 1050;
+            transition: opacity .15s linear;
+            top: 0;
+            left: 0;
+            height: 100vw;
+            width: 100vh;
+            opacity: 0;
+            background-color: #000;
+        }
+    }
+}
+
+
+
 // global button
 .profileBtn {
     background-color: $theme-dark;
@@ -463,6 +482,7 @@ $light-bg: #{var(--light-bg)};
         font-size: 16px;
         color: $textClr;
         aspect-ratio: 5/5;
+        padding-left: 14px;
         &:-webkit-autofill {
             -webkit-background-clip: text;
             -webkit-text-fill-color: $textClr;
@@ -473,6 +493,15 @@ $light-bg: #{var(--light-bg)};
             border: 2px solid $theme-blue;
         }
     }
+}
+// navbar plus button
+.plusBtn {
+    background-color: $theme-dark;
+    font-size: 20px;
+    font-weight: 600;
+    color: $theme-blue;
+    height: 23px;
+    width: 23px;
 }
 
 
@@ -1054,8 +1083,41 @@ $light-bg: #{var(--light-bg)};
                         }
                     }
                 }
+                & .sellBtn {
+                    background-color: $theme-red;
+                }
             }
         }
     }
 }
 // arbitrage detail page end
+
+// portfolio page start
+.portfolio {
+    & .portfolioContent {
+        & .portfolioCard {
+            background-color: $theme-dark;
+            & .portcardTitle {
+                font-size: 14px;
+                color: $text-gray;
+            }
+            & .portcardPrice {
+                font-size: 14px;
+                color: $textClr;
+            }
+            & .portfolioCardInner {
+                border-right: 1px solid $theme-blue;
+            }
+            & .cardValue {
+                font-size: 10px;
+                color: $theme-green;
+                padding-top: 2px;
+                & .increaseIcon {
+                    width: 12px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+}
+// portfolio page end
