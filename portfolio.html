@@ -145,14 +145,15 @@
                                     <!-- <a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0" data-bs-toggle="modal" data-bs-target="#filtermodal2">
                                         <img src="assets/img/svg/menuicon.svg" class="w-100" alt="bell">
                                     </a> -->
-                                    <a href="javascript:;" class="plusBtn d-flex align-items-center justify-content-center rounded-pill">+</a>
+                                    <a href="javascript:;" class="plusBtn d-flex align-items-center justify-content-center rounded-pill"  data-bs-toggle="offcanvas" data-bs-target="#filteroffcanwas" aria-controls="filteroffcanwas">+</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </navbar>
+
                 <div class="col-12 px-0 flex-fill" data-page-name="indexPage">
-                    <div class="row portfolioContent mx-0">
+                    <div class="row portfolioContent mx-0 mb-5">
                         <div class="col-12">
                             <div class="row portfolioCard rounded-3 mx-0 py-3 align-items-start">
                                 <div class="col-4 portfolioCardInner">
@@ -172,6 +173,518 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 pt-3">
+                            <div class="myAssetsHeading p-3 rounded-3">
+                                My Assets
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                <div class="col-12 px-4">
+                                    <a href="javascript:;" class="MoreIcon ms-auto d-flex align-items-center justify-content-center text-decoration-none">
+                                        <img src="assets/img/svg/moreicon.svg" alt="More" class="h-100 w-100 img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="javascript:;" class="btcBitcoin text-decoration-none d-flex align-items-center position-relative rounded-3 gap-2">
+                                                <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill">
+                                                    <img src="assets/img/svg/btc.svg" alt="btc" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <div class="btcBitcoinHeading">
+                                                        BTC
+                                                        <span class="btcBitcointitle ps-1">
+                                                            Bitcoin
+                                                        </span>
+                                                    </div>
+                                                    <div class="totalQuality ">
+                                                        Total Qty: <span> 0.30000000 B</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="totalCurrancyVal text-end pe-4">
+                                                <span>Total Curr. Val.</span>
+                                                $ 2355
+                                            </div>
+                                            <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    86.95%
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bordereline mx-auto my-3"></div>
+                                <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                <div class="col-12 ">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                        <div class="col-auto totalInverstment">$ 1930</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Net Gain / Loss</div>
+                                        <div class="col-auto totalInverstment">- $ 991.31</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row myAssetsCardInner mx-0 pt-3 gap-3">
+                                <div class="col-12">
+                                    <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                        <div class="col-12 px-4 pb-2">
+                                            <div class="d-flex align-items-center gap-2 justify-content-end">
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/delete.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-start">
+                                                <div class="col-6">
+                                                    <div class="btcBitcoin text-decoration-none d-flex align-items-start rounded-3 gap-2">
+                                                        <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill mt-1">
+                                                            <img src="assets/img/svg/btc.svg" alt="btc" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="btcBitcoinHeading">
+                                                                BTC
+                                                            </div>
+                                                            <div class="d-flex align-items-center tradenowtitle">
+                                                                Binance
+                                                                <a href="javascript:;" class="tradeNow text-decoration-none">Trade Now</a>
+                                                            </div>
+                                                            <div class="btcBitcoinprice">0.100000 B</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div class="totalCurrancyVal text-end pe-4">
+                                                        <span>Curr. Val.</span>
+                                                        $ 2355
+                                                    </div>
+                                                    <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                        <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            86.95%
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bordereline mx-auto my-3"></div>
+                                        <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                        <div class="col-12 ">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                                <div class="col-auto totalInverstment">$ 1930</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Gain / Loss</div>
+                                                <div class="col-auto totalInverstment">- $ 991.31</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                        <div class="col-12 px-4 pb-2">
+                                            <div class="d-flex align-items-center gap-2 justify-content-end">
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/delete.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-start">
+                                                <div class="col-6">
+                                                    <div class="btcBitcoin text-decoration-none d-flex align-items-start rounded-3 gap-2">
+                                                        <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill mt-1">
+                                                            <img src="assets/img/svg/btc.svg" alt="btc" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="btcBitcoinHeading">
+                                                                BTC
+                                                            </div>
+                                                            <div class="d-flex align-items-center tradenowtitle">
+                                                                WazirX
+                                                                <a href="javascript:;" class="tradeNow text-decoration-none">Trade Now</a>
+                                                            </div>
+                                                            <div class="btcBitcoinprice">0.100000 B</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div class="totalCurrancyVal text-end pe-4">
+                                                        <span>Curr. Val.</span>
+                                                        $ 2355
+                                                    </div>
+                                                    <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                        <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            86.95%
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bordereline mx-auto my-3"></div>
+                                        <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                        <div class="col-12 ">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                                <div class="col-auto totalInverstment">$ 1930</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Gain / Loss</div>
+                                                <div class="col-auto totalInverstment">- $ 991.31</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                        <div class="col-12 px-4 pb-2">
+                                            <div class="d-flex align-items-center gap-2 justify-content-end">
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/delete.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-start">
+                                                <div class="col-6">
+                                                    <div class="btcBitcoin text-decoration-none d-flex align-items-start rounded-3 gap-2">
+                                                        <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill mt-1">
+                                                            <img src="assets/img/svg/btc.svg" alt="btc" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="btcBitcoinHeading">
+                                                                BTC
+                                                            </div>
+                                                            <div class="d-flex align-items-center tradenowtitle">
+                                                                Coinbase
+                                                                <a href="javascript:;" class="tradeNow text-decoration-none">Trade Now</a>
+                                                            </div>
+                                                            <div class="btcBitcoinprice">0.100000 B</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div class="totalCurrancyVal text-end pe-4">
+                                                        <span>Curr. Val.</span>
+                                                        $ 2355
+                                                    </div>
+                                                    <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                        <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            86.95%
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bordereline mx-auto my-3"></div>
+                                        <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                        <div class="col-12 ">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                                <div class="col-auto totalInverstment">$ 1930</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Gain / Loss</div>
+                                                <div class="col-auto totalInverstment">- $ 991.31</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                        <div class="col-12 px-4 pb-2">
+                                            <div class="d-flex align-items-center gap-2 justify-content-end">
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="editdeleteIcon d-flex align-items-center justify-content-center text-decoration-none">
+                                                    <img src="assets/img/svg/delete.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row align-items-start">
+                                                <div class="col-6">
+                                                    <div class="btcBitcoin text-decoration-none d-flex align-items-start rounded-3 gap-2">
+                                                        <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill mt-1">
+                                                            <img src="assets/img/svg/btc.svg" alt="btc" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                        <div>
+                                                            <div class="btcBitcoinHeading">
+                                                                BTC
+                                                            </div>
+                                                            <div class="d-flex align-items-center tradenowtitle">
+                                                                Coinbase
+                                                                <a href="javascript:;" class="tradeNow text-decoration-none">Trade Now</a>
+                                                            </div>
+                                                            <div class="btcBitcoinprice">0.100000 B</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div class="totalCurrancyVal text-end pe-4">
+                                                        <span>Curr. Val.</span>
+                                                        $ 2355
+                                                    </div>
+                                                    <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                        <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            86.95%
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bordereline mx-auto my-3"></div>
+                                        <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                        <div class="col-12 ">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                                <div class="col-auto totalInverstment">$ 1930</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-1">
+                                            <div class="row mx-0 pe-2">
+                                                <div class="col totalInverstmenttitle">Gain / Loss</div>
+                                                <div class="col-auto totalInverstment">- $ 991.31</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                <div class="col-12 px-4">
+                                    <a href="javascript:;" class="MoreIcon ms-auto d-flex align-items-center justify-content-center text-decoration-none">
+                                        <img src="assets/img/svg/moreicon.svg" alt="More" class="h-100 w-100 img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="javascript:;" class="btcBitcoin text-decoration-none d-flex align-items-center position-relative rounded-3 gap-2">
+                                                <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill">
+                                                    <img src="assets/img/svg/eth.svg" alt="ETH" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <div class="btcBitcoinHeading">
+                                                        ETH
+                                                        <span class="btcBitcointitle ps-1">
+                                                            Ethereum
+                                                        </span>
+                                                    </div>
+                                                    <div class="totalQuality ">
+                                                        Total Qty: <span> 15.01000</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="totalCurrancyVal text-end pe-4">
+                                                <span>Total Curr. Val.</span>
+                                                $ 19,865
+                                            </div>
+                                            <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    86.95%
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bordereline mx-auto my-3"></div>
+                                <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                <div class="col-12 ">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                        <div class="col-auto totalInverstment">$ 1,140</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Net Gain / Loss</div>
+                                        <div class="col-auto totalInverstment">- $ 991.31</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                <div class="col-12 px-4">
+                                    <a href="javascript:;" class="MoreIcon ms-auto d-flex align-items-center justify-content-center text-decoration-none">
+                                        <img src="assets/img/svg/moreicon.svg" alt="More" class="h-100 w-100 img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="javascript:;" class="btcBitcoin text-decoration-none d-flex align-items-center position-relative rounded-3 gap-2">
+                                                <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill">
+                                                    <img src="assets/img/svg/xrp.svg" alt="XRP" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <div class="btcBitcoinHeading">
+                                                        XRP
+                                                        <span class="btcBitcointitle ps-1">
+                                                            Ripple
+                                                        </span>
+                                                    </div>
+                                                    <div class="totalQuality ">
+                                                        Total Qty: <span> 15.01000</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="totalCurrancyVal text-end pe-4">
+                                                <span>Total Curr. Val.</span>
+                                                $ 19,865
+                                            </div>
+                                            <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    86.95%
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"> 86.95%</a></li>
+                                                    <li><a class="dropdown-item" href="#"> 86.95%</a></li>
+                                                    <li><a class="dropdown-item" href="#"> 86.95%</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bordereline mx-auto my-3"></div>
+                                <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                <div class="col-12 ">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                        <div class="col-auto totalInverstment">$ 1,140</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Net Gain / Loss</div>
+                                        <div class="col-auto totalInverstment">- $ 991.31</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row mx-0 myAssetsCard rounded-3 py-3">
+                                <div class="col-12 px-4">
+                                    <a href="javascript:;" class="MoreIcon ms-auto d-flex align-items-center justify-content-center text-decoration-none">
+                                        <img src="assets/img/svg/moreicon.svg" alt="More" class="h-100 w-100 img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="javascript:;" class="btcBitcoin text-decoration-none d-flex align-items-center position-relative rounded-3 gap-2">
+                                                <div class="btcBitcoinIcon d-flex align-items-center justify-content-center rounded-pill">
+                                                    <img src="assets/img/svg/sql.svg" alt="SOL" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <div class="btcBitcoinHeading">
+                                                        SOL
+                                                        <span class="btcBitcointitle ps-1">
+                                                            Bitcoin
+                                                        </span>
+                                                    </div>
+                                                    <div class="totalQuality ">
+                                                        Total Qty: <span> 0.30000000 B</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="totalCurrancyVal text-end pe-4">
+                                                <span>Total Curr. Val.</span>
+                                                $ 2355
+                                            </div>
+                                            <div class="dropdown curranDrop text-end d-inline-flex pe-4">
+                                                <a class="btn btn-secondary dropdown-toggle p-0 shadow-none border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    86.95%
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bordereline mx-auto my-3"></div>
+                                <div class="col-12 detailHeading p-3 rounded-3 d-none">Details</div>
+                                <div class="col-12 ">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Total Investment Value</div>
+                                        <div class="col-auto totalInverstment">$ 1930</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <div class="row mx-0 pe-2">
+                                        <div class="col totalInverstmenttitle">Net Gain / Loss</div>
+                                        <div class="col-auto totalInverstment">- $ 991.31</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- filter modal start -->
                     <div class="modal fade filterModal position-absolute" id="filtermodal2" tabindex="-1" aria-labelledby="filtermodal2" aria-hidden="true">
@@ -202,7 +715,50 @@
                         </div>
                     </div>
                     <!-- filter modal end -->
+
+                    <!-- portfolio offcanvas start -->
+                    <div class="offcanvas offcanvas-bottom filterOffcanvas position-absolute  rounded-top-4" data-bs-scroll="true" tabindex="-1" id="filteroffcanwas" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header  rounded-top-4 px-4">
+                            <div class="offcanvas-title d-flex align-items-center justify-content-center w-100" id="filteroffcanwas">
+                                <div class="offcanvasIcon me-2 d-flex align-items-center justify-content-center"><img src="assets/img/table/btc.svg" alt="bitcoin" class="h-100 w-100 img-fluid rounded-pill"></div>
+                                Bitcoin
+                            </div>
+                            <button type="button" class="btn-close p-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="assets/img/svg/closered.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body p-0 pb-4">
+                            <div class="row mx-0">
+                                <div class="col-12 px-0 filtermain">
+                                    <a href="javascript:;" class="filterall d-inline-flex align-items-center gap-3">
+                                        <div class="coinDetailIcon d-flex align-items-center justify-content-center"><img src="assets/img/svg/coindetail.svg" alt="Coin Detail" class="h-100 w-100 img-fluid"></div>
+                                        Coin Details
+                                    </a>
+                                </div>
+                                <div class="col-12 px-0 filtermain">
+                                    <a href="javascript:;" class="filterall d-inline-flex align-items-center gap-3">
+                                        <div class="coinDetailIcon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/svg/setalert.svg" alt="Set Alert" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        Set Alert
+                                    </a>
+                                </div>
+                                <div class="col-12 px-0 filtermain">
+                                    <a href="javascript:;" class="filterall d-inline-flex align-items-center gap-3">
+                                        <div class="coinDetailIcon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/svg/deleteFromportfolio.svg" alt="Delete From Portfolio" class="h-100 w-100 img-fluid">
+                                        </div>
+                                        Delete From Portfolio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio offcanvas start -->
+
                 </div>
+
+                <!-- *** [ footer start ] ***-->
                 <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
                     <div class="row mx-0 align-items-center innerBar w-100">
                         <div class="col px-0 bottombarTabs text-center"><a href="index.html" class="linkTab active text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/home.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">Home</span></a></div>
@@ -211,6 +767,8 @@
                         <div class="col px-0 bottombarTabs text-center"><a href="more.html" class="linkTab text-decoration-none"><div class="gameImg mx-auto mb-2"><img src="assets/img/svg/More.svg" class="h-100" alt="cricket"></div> <span class="gamesheading pt-1 d-flex justify-content-center">More</span></a></div>
                     </div>
                 </footer>
+                <!-- *** [ footer end ] ***-->
+
                 <!-- *** [ Profile Offcanvas ] ***-->
                 <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProfile" aria-controls="offcanvasProfile">
                 Button with data-bs-target

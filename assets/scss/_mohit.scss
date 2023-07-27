@@ -356,6 +356,10 @@ body {
             color: $textClr;
             font-weight: 400;
         }
+        & .offcanvasIcon {
+            height: 28px;
+            width: 28px;
+        }
         & .btn-close {
             opacity: 1;
             background: none;
@@ -1116,6 +1120,133 @@ body {
                     width: 12px;
                     height: 7px;
                 }
+            }
+        }
+        & .myAssetsHeading {
+            font-size: 15px;
+            color: $textClr;
+            background-color: $theme-dark;
+        }
+        & .myAssetsCard {
+            background-color: $theme-dark;
+            & .MoreIcon {
+                height: 18px;
+                width: 7px;
+            }
+            & .btcBitcoin {
+                background-color: $bodyBg;
+                padding: 12px;
+                &::before {
+                    content:'';
+                    position: absolute;
+                    top: 50%;
+                    right: 13px;
+                    height: 6px;
+                    width: 13px;
+                    background: url(../img/svg/accordionicon.svg) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                & .btcBitcoinIcon {
+                    height: 29px;
+                    width: 29px;
+                }
+                & .btcBitcoinHeading {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $textClr;
+                    & .btcBitcointitle {
+                        font-size: 12px;
+                        color: $theme-blue;
+                        font-weight: 400;
+                    }
+                }
+                & .totalQuality {
+                    font-size: 8px;
+                    color: $light-bg;
+                    padding-left: 3px;
+                    // color: rgba($textClr, 0.6);
+                    & span {
+                        color: $textClr;
+                    }
+                }
+            }
+            & .totalCurrancyVal {
+                font-size: 14px;
+                color: $textClr;
+                & span {
+                    font-size: 8px;
+                    color: $light-bg;
+                }
+            }
+            & .curranDrop {
+                padding-left: 13px;
+                & .dropdown-toggle {
+                    font-size: 10px;
+                    color: $textClr;
+                    background: none;
+                    &::after {
+                        position: absolute;
+                        left: 0;
+                        top: 45%;
+                        font-size: 13px;
+                    }
+                }
+                & .dropdown-menu {
+                    min-width: auto;
+                    & .dropdown-item {
+                        font-size: 10px;
+                        display: inline;
+                    }
+                }
+            }
+            & .detailHeading {
+                font-size: 15px;
+                color: $textClr;
+                font-weight: 500;
+                background-color: $bodyBg;
+            }
+            & .bordereline {
+                background: $dark-border;
+                height: 1px;
+                opacity: 1;
+                width: 92%;
+            }
+            & .totalInverstmenttitle {
+                font-size: 12px;
+                color: $light-bg;
+            }
+            & .totalInverstment {
+                font-size: 14px;
+                color: $textClr;
+            }
+        }
+        & .myAssetsCardInner {
+            & .editdeleteIcon {
+                height: 14px;
+                width: 14px;
+            }
+            & .btcBitcoin {
+                background:none;
+                padding: 0;
+                padding-left: 8px;
+                &::before {
+                    content: none;
+                }
+            }
+            & .tradenowtitle {
+                font-size: 10px;
+                color: $theme-blue;
+            }
+            & .tradeNow {
+                font-size: 8px;
+                color: $textClr;
+                padding-left: 2px;
+            }
+            & .btcBitcoinprice {
+                font-size: 10px;
+                color: $light-bg;
+                padding-top: 2px;
             }
         }
     }
