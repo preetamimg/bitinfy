@@ -1,47 +1,73 @@
 @include media-breakpoint(basic) {
     .footer {
-        height: 60px;
+        height: 56px;
+        border-radius: 10px 10px 0px 0px;
         &.bottomBar {
-            background-color: lighten($black, 10);
-            box-shadow: 0px 0px 6px rgba($white, 0.1);
+            background-color: $theme-dark;
+            box-shadow: 0px 0px 6px rgba($textClr, 0.4);
         & .innerBar {
         & .bottombarTabs {
             & .linkTab {
             transition: all 0.3s;
             & .gameImg {
-                height: 20px;
+                height: 24px;
                 & img {
                     transition: all 0.3s;
-                    filter: brightness(3);
+                    filter: grayscale(0.9);
                 }
             }
             & .gamesheading {
                 line-height: 100%;
                 font-size: 12px;
-                font-weight: 600;
+                font-weight: 400;
                 transition: all 0.3s;
-                color: $gray-700;
+                color: $gray-bg;
             }
-            &:hover {
-                & .gamesheading {
-                color: $white !important;
-                }
+            // &:hover {
+            //     & .gamesheading {
+            //         color: $theme-blue !important;
+            //     }
+            //     & .gameImg {
+            //         & img {
+            //             filter: none !important;
+            //         }
+            //     }
+            // }
+            &.active, &:hover {
                 & .gameImg {
                     & img {
-                        filter: invert(1);
+                        filter: unset !important;
                     }
                 }
-            }
-            &.active {
-                & .gameImg {
-                & img {
-                    filter: invert(1) !important;
-                }
-                }
                 & .gamesheading {
-                color: $white !important;
+                    color: $theme-blue !important;
                 }
             }
+            }
+            &.home {
+                margin-top: -50px;
+                position: relative;
+                z-index: 555;
+                & .linkTab {
+                    border: 4px solid $bodyBg;
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 100%;
+                    background-color: $gray-bg;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    & .gamesheading {
+                        color: $theme-dark !important;
+                        font-size: 11px;
+                    }
+                    & .gameImg {
+                        & img {
+                            filter: unset !important;
+                        }
+                    }
+                }
             }
         }
         }
