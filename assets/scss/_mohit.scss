@@ -130,6 +130,7 @@ body {
 .filterall {
     font-size: 16px;
     color: $textClr;
+    font-weight: 400;
     & .filterImgs {
         gap: 1px;
         & .filterIcons {
@@ -388,6 +389,7 @@ body {
         }
     }
 }
+
 .offcanvas-backdrop {
     // background-color: rgba($light-bg, 0.4);
     background-color:$light-bg;
@@ -516,6 +518,64 @@ body {
     width: 92%;
 }
 
+// search bar two
+.searchform {
+    height:33px;
+    & .serachIcon {
+        height: 15px;
+        width: 15px;
+    }
+    & .serachIn {
+        width: 100%;
+        height: 100%;
+        color: $text-gray;
+        font-size: 16px;
+        &::placeholder {
+            font-size: 16px;
+            color: $text-gray;
+        }
+    }
+    & .labelSearch {
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-bottom: 3px solid transparent;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    & input:focus + .labelSearch::after,
+    & input:valid + .labelSearch::after {
+        transform: translateX(0%);
+        border-color: $theme-blue;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// trade button 
+.tradeButton {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $theme-dark;
+    color: $textClr;
+    transition: all 0.3s ease-in-out;
+    padding: 7px 0;
+    &:hover {
+        background-color: $theme-blue;
+    }
+}
 
 
 
@@ -923,7 +983,7 @@ body {
         }
         & .priceTitle {
             font-size: 12px;
-            color: rgba($textClr, .05);
+            color: $light-bg;
         }
     }
     & .comparePrice {
@@ -1441,4 +1501,194 @@ body {
 // set price alert page end
 
 // exchange detail page start
+.exchangeDetail {
+    & .exchangeDetailCard {
+        background-color: $theme-dark;
+        & .exchangeDetailIcon {
+            height:37px ;
+            width: 37px;
+        }
+        & .exchangeDetailHeading {
+            font-size: 18px;
+            color: $textClr;
+        }
+        & .exchangeDetailPrice {
+            font-size: 20px;
+            color: $textClr;
+            margin-top: 13px;
+        }
+        & .exchangeDetailTime {
+            font-size: 10px;
+            color: $light-bg;
+        }
+        & .scoreTitle {
+            font-size: 12px;
+            color: $textClr;
+            & .score {
+                font-weight: 700;
+            }
+        }
+    }
+    & .exchangeDetailInener {
+        background: $theme-dark;
+    }
+    & .exchangeDetailText {
+        font-size: 10px;
+        font-weight: 400;
+        color: $textClr;
+    }
+    & .rightcarrow {
+        width: 9px;
+        height: 8px;
+    }
+    & .exchangeDetailCoin {
+        font-size: 10px;
+        color: $light-bg;
+    }
+    & .exchangeDetailSeachMain {
+        background-color: $theme-dark;
+        & .usdtSelect {
+            font-size: 12px;
+            color: $theme-blue;
+        }
+    }
+    & .pricedetailTable {
+        & .pricedetailHead {
+            & th {
+                font-size: 14px;
+            }
+            & .filterall {
+                font-size: 14px;
+                & .filterImgs {
+                    & .filterIcons {
+                        height: 8px;
+                        width: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
 // exchange detail page end
+
+// converter page start
+.converter {
+    & .selectExchange {
+        background-color: $theme-dark;
+        padding: 2px;
+        padding-left: 13px;
+        & .selectExchangeHeading {
+            font-size: 12px;
+            color: $light-bg;
+            border-bottom: 1px solid $light-bg;
+        }
+    }
+    & .converterCard {
+        background-color: $theme-dark;
+        & .converterCoincontent {
+            border-bottom: 1px solid $light-bg;
+            padding:0 35px 6px 2px;
+            & .convertercoinIcon {
+                height: 22px;
+                width: 22px;
+                & img {
+                    opacity: 0.5;
+                }
+            }
+            & .convertercoinName {
+                font-size: 16px;
+                color: $light-bg;
+            }
+        }
+        & .totalBitcoin {
+            font-size: 20px;
+            color: $light-bg;
+        }
+        & .bitcoin {
+            font-size: 12px;
+            color: $light-bg;
+        }
+        & .converterBtn {
+            background-color: $theme-blue;
+            padding: 6px 0;
+            & .converterIcon {
+                width: 14px;
+                height: 20px;
+            }
+        }
+    }
+}
+// converter page end
+
+// compare Exchange page start
+.compareExchange {
+    & .compareExchangeTable {
+        background-color: $theme-dark;
+        & .comparetableHeader {
+            border-bottom: 2px solid $bodyBg;
+            // & tr {
+            //     & th {
+            //         &:nth-child(1) {
+            //             border-top-left-radius: 10px;
+            //         }
+            //         &:nth-child(3) {
+            //             border-top-right-radius: 10px;
+            //         }
+            //     }
+            // }
+            & .tableHeading {
+                font-size: 15px;
+                color: $textClr;
+                font-weight: 700;
+                & .tableCoinIcon {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+        & .comparetableBody {
+            background-color: $theme-dark;
+            & .bordertable {
+                border-bottom: 1px solid $dark-border;
+            }
+            & .tableTitle {
+                font-size: 14px;
+                font-weight: 700;
+                color: $textClr;
+            }
+            & .rankcount {
+                font-size: 16px;
+                color: $textClr;
+            }
+            & .ratingIcon {
+                height: 12px;
+                width: 12px;
+            }
+            & .tablecontent {
+                font-size: 12px;
+                color: $textClr;
+            }
+            & .rightIcon {
+                width: 12px;
+                height: 10px;
+            }
+            & .wrongIcon {
+                height: 11px;
+                width: 10px;
+            }
+            & .countryName {
+                font-size: 14px;
+                color: $textClr;
+            }
+            & .openexchangeBtn {
+                font-size:12px ;
+                font-weight: 700;
+                color:$textClr ;
+                background-color:$theme-blue ;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+// compare Exchange page end
