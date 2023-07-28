@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main class="container-fluid compareExchange">
+        <main class="container-fluid newsPage">
             <div class="row mainInner">
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
@@ -118,20 +118,912 @@
                     <div class="row">
                         <div class="col-12">
                             <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                                    <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                                <div class="nav nav-tabs newsTab border-0 flex-nowrap overflow-x-auto overflow-y-hidden" id="nav-tab" role="tablist">
+                                    <button class="nav-link newsBtn bg-transparent border-0 active" id="nav-AllNews-tab" data-bs-toggle="tab" data-bs-target="#nav-AllNews" type="button" role="tab" aria-controls="nav-AllNews" aria-selected="true">All</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Twitter-tab" data-bs-toggle="tab" data-bs-target="#nav-Twitter" type="button" role="tab" aria-controls="nav-Twitter" aria-selected="false">Twitter</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Video-tab" data-bs-toggle="tab" data-bs-target="#nav-Video" type="button" role="tab" aria-controls="nav-Video" aria-selected="false">Video</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Ethereum-tab" data-bs-toggle="tab" data-bs-target="#nav-Ethereum" type="button" role="tab" aria-controls="nav-Ethereum" aria-selected="false">Ethereum</button>
+                                    <!-- <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button>
+                                    <button class="nav-link newsBtn bg-transparent border-0" id="nav-Bitcoin-tab" data-bs-toggle="tab" data-bs-target="#nav-Bitcoin" type="button" role="tab" aria-controls="nav-Bitcoin" aria-selected="false">Bitcoin</button> -->
                                 </div>
                             </nav>
                         </div>
                         
                         <div class="tab-content col-12" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade show active" id="nav-AllNews" role="tabpanel" aria-labelledby="nav-AllNews-tab" tabindex="0">
+                                <div class="row mx-0 gap-2 newsSection">
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Twitter" role="tabpanel" aria-labelledby="nav-Twitter-tab" tabindex="0">
+                                <div class="row mx-0 gap-2 newsSection">
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Video" role="tabpanel" aria-labelledby="nav-Video-tab" tabindex="0">.
+                                <div class="row mx-0 gap-2 newsSection">
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Bitcoin" role="tabpanel" aria-labelledby="nav-Bitcoin-tab" tabindex="0">
+                                <div class="row mx-0 gap-2 newsSection">
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Ethereum" role="tabpanel" aria-labelledby="nav-Ethereum-tab" tabindex="0">
+                                <div class="row mx-0 gap-2 newsSection">
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">10 min ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newsSection2.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">2 hrs ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="outterCard">
+                                            <div class="row mx-0">
+                                                <div class="col-auto">
+                                                    <div class="newsImg"><img src="assets/img/newssection3.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="row mx-0 gap-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col px-0">
+                                                                    <div class="heading">Lorem Ipsum </div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="subHeading">1 day ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <a href="javascript:;" class="newspageBtn">cointelegraph.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
