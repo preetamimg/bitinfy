@@ -158,6 +158,9 @@
   --themeing1dark: #134c85;
   // --light-blackBg:#181818;
 
+  --gray: #6D7188;
+  --themeing1dark: #134c85;
+  --light-bg:#D9D9D9B2;
 }
 
 .lightMode{
@@ -169,7 +172,9 @@
   --themeing4: #E96464;
   --text-gray: #CAC4D0;
   --darborder: #303030;
+  --gray: #9f9f9f;
   --themeing1dark: #134c85;
+  --light-bg:#D9D9D9B2;
 
 }
 
@@ -184,6 +189,10 @@ $dark-border: #{var(--darborder)};
 $light-bg: #{var(--light-bg)};
 $theme-blueDark: #{var(--themeing1dark)};
 // $light-blackBg:#{var(--light-blackBg)};
+$gray-bg: #{var(--gray)};
+$theme-blueDark: #{var(--themeing1dark)};
+$light-bg: #{var(--light-bg)};
+
 
 
 
