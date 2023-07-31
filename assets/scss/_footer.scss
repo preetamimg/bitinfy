@@ -53,18 +53,21 @@
                     width: 57px;
                     height: 57px;
                     border-radius: 100%;
-                    background-color: $gray-bg;
+                    background-color: $theme-blue;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     & .gamesheading {
                         color: $theme-dark !important;
+                        // color: $textClr !important;
                         font-size: 11px;
                     }
                     & .gameImg {
                         & img {
-                            filter: unset !important;
+                            // filter: unset !important;
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
                         }
                     }
                 }
