@@ -1712,13 +1712,27 @@ body {
         background-color: $theme-dark;
         border-radius:5px;
         padding: 12px 0px;
+        & .newsImg {
+            width: 98px;
+            height: 78px;
+            overflow: hidden;
+            border-radius: 8px;
+            & img {
+                object-fit: cover;
+            }
+        }
+        & .newsTextCol {
+            width: calc(100% - 122px);
+        }
         & .heading{
             color: $textClr;
             font-size: 14px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         & .subHeading{
             color:$light-bg;
@@ -1726,6 +1740,7 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            text-align: end;
         }
         & .pera{
             color:$textClr;
