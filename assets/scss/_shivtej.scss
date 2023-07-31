@@ -46,7 +46,7 @@
                         padding: 5px 13px;
                         background: $theme-red;
                         color: $textClr;
-                        font-family:' Roboto';
+                        // font-family:' Roboto';
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 700;
@@ -58,7 +58,7 @@
                     padding: 5px 13px;
                     background: $theme-green;
                     color: $textClr;
-                    font-family:' Roboto';
+                    // font-family:' Roboto';
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 700;
@@ -77,11 +77,11 @@
                     border-radius: 8px;
                     background: $theme-dark;
                     position: relative;
-                    &.active{
-                        box-shadow:  0px 0px 8px 0px rgba($theme1, 0.5);
-                        z-index: 1;
-                        transform: scale(1.1);
-                    }
+                    // &.active{
+                    //     box-shadow:  0px 0px 8px 0px rgba($theme1, 0.5);
+                    //     z-index: 1;
+                    //     transform: scale(1.1);
+                    // }
                     & .card-body{
                         & .CardContent{
                             & .cardImg{
@@ -90,7 +90,7 @@
                             }
                             & .cardHeaing{
                                 color: $textClr;
-                                font-family:' Roboto';
+                                // font-family:' Roboto';
                                 font-size: 14px;
                                 font-style: normal;
                                 font-weight: 700;
@@ -238,7 +238,7 @@
                         }
                         & .criptoSubheading{
                             color:$theme-blue;
-                            font-family:' Roboto';
+                            // font-family:' Roboto';
                             font-size: 12px;
                             font-style: normal;
                             font-weight: 400;
@@ -246,7 +246,7 @@
                         }
                         & .pera{
                             color: $textClr;
-                            font-family: Roboto;
+                            // font-family: Roboto;
                             font-size: 12px;
                             font-style: normal;
                             font-weight: 400;
@@ -254,7 +254,7 @@
                         }
                         & .bitcoinSubheading{
                             color:$text-gray;
-                            font-family:' Roboto';
+                            // font-family:' Roboto';
                             font-size: 9px;
                             font-style: normal;
                             font-weight: 400;
@@ -277,61 +277,61 @@
             }
         }
     }
-    }
+}
 .ArbitrageCard{
     // padding: 5px 16px !important;
     & .outterCard{
-      background-color: $theme-dark;
-      border-radius:5px;
-      padding: 15px;
-      & .icon{
-          width: 15px;
-          height: 15px;
-      }
-      & .criptoHeading{
-          color:$textClr;
-          
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-      }
-      & .criptoSubheading{
-          color:$theme-blue;
-          font-family:' Roboto';
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-      }
-      & .pera{
-          color: $textClr;
-          font-family: Roboto;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-      }
-      & .bitcoinSubheading{
-          color:$text-gray;
-          font-family:' Roboto';
-          font-size: 9px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-      }
-      & .bitcoinHeading{
-          color:$textClr;
-          
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-      }
-      & .buyBtn{
-          font-size: 12px;
-          border-radius: 5px;
-      }
+        background-color: $theme-dark;
+        border-radius:5px;
+        padding: 15px;
+        & .icon{
+            width: 15px;
+            height: 15px;
+        }
+        & .criptoHeading{
+            color:$textClr;
+            
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .criptoSubheading{
+            color:$theme-blue;
+            //   font-family:' Roboto';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .pera{
+            color: $textClr;
+            //   font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .bitcoinSubheading{
+            color:$text-gray;
+            //   font-family:' Roboto';
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .bitcoinHeading{
+            color:$textClr;
+            
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .buyBtn{
+            font-size: 12px;
+            border-radius: 5px;
+        }
     }
 }
 
