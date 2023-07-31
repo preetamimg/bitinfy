@@ -1770,12 +1770,13 @@ body {
 
 // slider start
 .homeslider{
+    // padding-bottom: 55px;
     & .sliderContent{
         & .owlImg{
-            width: 44px;
-            height: 44px;
+            width: 62px;
+            height: 62px;
             background-color: $theme-dark;
-            padding: 8px;
+            padding: 10px;
             border-radius: 50%;
         }
         & .pera{
@@ -1788,18 +1789,13 @@ body {
             line-height: normal;
         }
     }
-    & .owl-dots{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
-        & .owl-dot{
+    & .swiper-pagination {
+        & .swiper-pagination-bullet{
             height: 10px;
             width: 10px;
             border-radius: 50%;
             background-color:$text-gray;
-            &.active{
+            &.swiper-pagination-bullet-active{
                 background-color:$theme-blue;
             }
         }
