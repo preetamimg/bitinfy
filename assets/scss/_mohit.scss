@@ -180,7 +180,7 @@ body {
             transition: all 0.3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
             & img {
                 transition: all 0.3s ease-in-out;
-                filter: brightness(10);
+                // filter: brightness(10);
             }
             & span {
                 transition: all .3s cubic-bezier(0.650, -0.600, 0.240, 1.650);
@@ -200,9 +200,9 @@ body {
             }
             & .search-icon {
                 left: 10px;
-                & img {
-                    filter: none;
-            }
+                // & img {
+                //     filter: none;
+                // }
             }
         }
     }

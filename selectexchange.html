@@ -96,7 +96,7 @@
                         </div> -->
                     <div class="row mt-4 coinTabContent rounded-top-4">
                         <div class="col-12 py-2 px-0">
-                            <div class="tabfilter d-flex align-items-center justify-content-between px-4">
+                            <div class="tabfilter d-flex align-items-center justify-content-between px-4 gap-3">
                                 <div class="filterall d-inline-flex align-items-center gap-1">
                                     All
                                     <div class="d-inline-flex flex-column filterImgs">
@@ -108,7 +108,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="search-wrapper position-relative">
+                                <div class="search-wrapper position-relative w-100">
                                     <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
                                         <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Type to search" />
                                         <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
@@ -377,7 +377,7 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-        <!-- <script>
+        <script>
             function searchToggle(obj, evt){
                 var container = $(obj).closest('.search-wrapper');
                 if(!container.hasClass('active')){
@@ -390,6 +390,6 @@
                     container.find('.search-input').val('');
                 }
         }
-        </script> -->
+        </script>
     </body>
 </html>

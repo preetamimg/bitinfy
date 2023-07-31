@@ -63,9 +63,9 @@
         
 
         <!-- style -->
-        <!-- <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script> -->
+        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <!-- <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
     </head>
@@ -78,11 +78,13 @@
                             <div class="userImage rounded-circle overflow-hidden"><img src="assets/img/user.svg" class="w-100" alt="user"></div>
                         </div>
                         <div class="col pe-0 serachInput">
-                            <!-- <div class="input-group inputGroup">
-                                <span class="input-group-text border-0 shadow-none rounded-0 rounded-start-2 inputText" id="basic-addon1"><img src="assets/img/fe_search.svg" alt="search" class="w-100 h-100"></span>
-                                <input type="text" class="form-control border-0 shadow-none py-2 ps-0 inputStyle" placeholder="Serach" aria-label="Username" aria-describedby="basic-addon1">
-                            </div> -->
-                            <div class="position-relative search-wrapper">
+                            <!-- <form action="javascript:;"> -->
+                                <form class="input-group inputGroup">
+                                        <button class="input-group-text border-0 shadow-none rounded-0 rounded-start-2 inputText" id="basic-addon1"><img src="assets/img/fe_search.svg" alt="search" class="w-100 h-100"></button>
+                                        <input type="text" class="form-control border-0 shadow-none py-2 ps-0 inputStyle" placeholder="Serach" aria-label="Username" aria-describedby="basic-addon1" required>
+                                </form>
+                            <!-- </form> -->
+                            <!-- <div class="position-relative search-wrapper">
                                 <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
                                     <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Search" />
                                     <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
@@ -91,8 +93,7 @@
                                         </span>
                                     </button>
                                 </div>
-                                <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-auto notification">
                             <div class="row mx-0 align-items-center">
@@ -1464,21 +1465,6 @@
         <!-- <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
         <script type="module" src="assets/js/main.min.js"></script>
         <script src="assets/libs/swiper-js/js/swipejs.js"></script>
-        <script>
-            function searchToggle(obj, evt){
-                var container = $(obj).closest('.search-wrapper');
-                if(!container.hasClass('active')){
-                    container.addClass('active');
-                    evt.preventDefault();
-                }
-                else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-                    container.removeClass('active');
-                    // clear input
-                    container.find('.search-input').val('');
-                }
-        }
-        </script>
-        
         <!-- slider -->
         <script>
             var swiper = new Swiper(".homeslider", {
@@ -1534,6 +1520,22 @@
             //     $('.swiper-slide a').on('click touchstart', function(e) {
             //     e.preventDefault();
             // });
+        </script>
+
+        <!-- search bar -->
+        <script>
+            function searchToggle(obj, evt){
+                var container = $(obj).closest('.search-wrapper');
+                if(!container.hasClass('active')){
+                    container.addClass('active');
+                    evt.preventDefault();
+                }
+                else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                    container.removeClass('active');
+                    // clear input
+                    container.find('.search-input').val('');
+                }
+            }
         </script>
     </body>
 </html>
