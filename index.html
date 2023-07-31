@@ -67,6 +67,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
+        <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
     </head>
     <body>
         <main class="container-fluid indexSection">
@@ -234,7 +235,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 px-0 mt-2 owlSection">
+                                                <!-- <div class="col-12 px-0 mt-2 owlSection">
                                                     <div class="owl-carousel owl-theme exchangeOwl">
                                                         <div class="item">
                                                             <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/deede.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
@@ -256,6 +257,50 @@
                                                             <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/deede.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
                                                             <div class="pera pt-1">Exchange</div>
                                                         </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-12">
+                                                    <div class="swiper owlSection homeslider">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/deede.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">Exchange</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/convert.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">Converter</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/exchangeframe.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">Compare Exchange</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/news.svg" alt="news" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">News</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/deede.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">Exchange</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="sliderContent">
+                                                                    <div class="owlImg d-flex align-items-center justify-content-center mx-auto"><img src="assets/img/exchangeframe.svg" alt="exchange" class="img-fluid w-100 h-100"></div>
+                                                                    <div class="pera pt-1">Compare Exchange</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- If we need pagination -->
+                                                        <div class="swiper-pagination"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 px-0">
@@ -398,7 +443,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                  <div class="col-12 px-0 ArbitrageCard">
+                                                <div class="col-12 px-0 ArbitrageCard">
                                                     <div class="row mx-0 gap-2">
                                                         <div class="col-12 px-0">
                                                             <div class="outterCard">
@@ -1220,6 +1265,7 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <script src="assets/libs/swiper-js/js/swipejs.js"></script>
         <script>
             function searchToggle(obj, evt){
                 var container = $(obj).closest('.search-wrapper');
@@ -1233,6 +1279,15 @@
                     container.find('.search-input').val('');
                 }
         }
+        </script>
+        
+        <!-- slider -->
+        <script>
+            var swiper = new Swiper(".homeslider", {
+                pagination: {
+                el: ".swiper-pagination",
+                },
+            });
         </script>
     </body>
 </html>

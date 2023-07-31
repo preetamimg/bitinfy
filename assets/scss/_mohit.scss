@@ -1759,12 +1759,49 @@ body {
     & .newspara {
         font-size: 14px;
         color: $textClr;
-        font-weight: 700;
     }
     & .newstitle {
         font-size: 14px;
         color: $textClr;
-        // font-weight: 700;
+        font-weight: 700;
     }
 }
 // news detail page end
+
+// slider start
+.homeslider{
+    & .sliderContent{
+        & .owlImg{
+            width: 44px;
+            height: 44px;
+            background-color: $theme-dark;
+            padding: 8px;
+            border-radius: 50%;
+        }
+        & .pera{
+            color:$textClr;
+            text-align: center;
+            
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    & .owl-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        & .owl-dot{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color:$text-gray;
+            &.active{
+                background-color:$theme-blue;
+            }
+        }
+    }
+}
