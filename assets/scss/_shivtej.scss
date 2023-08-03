@@ -397,3 +397,43 @@
 @include media-breakpoint-down(md) {}
 
 @include media-breakpoint-down(sm) {}
+
+// support request 
+
+.supportRequest{
+    
+    & .supportSection{
+        & .fromSection{
+            & .cards{
+                & .inputgroup{
+                    & .inputgroupText{
+                        & .fromLabel{
+                            height: 10px;
+                            width: 10px;
+                        }
+                    }
+                }
+                & .form-floating{
+                    & .formSelect{
+                        padding: 5px 20px 5px 10px;
+                        color: $light-bg;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    & .formInput{
+                        resize: none;
+                        height: 140px;
+                        &::placeholder{
+                            color: $textClr;
+                            font-size: 16px; 
+                        }
+                    }
+                    & .selectInput{
+                        top: -15px !important;
+                    }
+                }
+          
+            }
+        }
+    }
+}
