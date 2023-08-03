@@ -146,7 +146,6 @@
                           }
                           & .pera{
                               color:$theme-green;
-                              
                               font-size: 10px;
                               font-style: normal;
                               font-weight: 400;
@@ -154,6 +153,9 @@
                               & .icon{
                                   width: 12px;
                                   height: 14px;
+                              }
+                              &.loss {
+                                color: $theme-red;
                               }
                           }
                       }
