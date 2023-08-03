@@ -453,6 +453,10 @@ body {
     }
 }
 
+.modalContent {
+    background-color: $bodyBg;
+}
+
 // accordion button all
 .accordioncontent {
     & .accordionBtn {

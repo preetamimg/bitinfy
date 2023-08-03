@@ -135,7 +135,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex mx-auto  justify-content-center mt-5">
-                                        <a href="javascript:;" class="applyBtn">Apply</a>
+                                        <a href="javascript:;" class="applyBtn" data-bs-toggle="modal" data-bs-target="#coinmodal">Apply</a>
                                     </div>  
                                 </div>
                                 
@@ -245,6 +245,304 @@
                             <div class="col-12"><a href="mailto: Bitinfy@example.com" class="text-white addlink fs-12 d-flex">Email :- Bitinfy@example.com</a></div>
                             <div class="col-12"><a href="tel: 180012001200" class="text-white addlink fs-12 d-flex">Call :- 1800-1200-1200</a></div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade position-absolute selectCoin marketmanag" id="coinmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog w-100 modal-fullscreen modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header p-0 border-0">
+                            <navbar class="col-12 header d-flex align-items-center px-0">
+                                <div class="row mx-0 innerheader align-items-center w-100">
+                                    <div class="col-auto profile">
+                                        <!-- <div class="userImage overflow-hidden"><img src="assets/img/svg/Menu.svg" class="w-100" alt="Profile"></div> -->
+                                        <a href="javascript:;" class="backBtn d-flex align-items-center justify-content-center"><img class="w-100 h-100" src="assets/img/svg/backBtn.svg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <!-- <div class="gamesLogo d-flex justify-content-center"><img src="assets/img/logo/whiteLogo.png" alt="logo" class="h-100"></div> -->
+                                        <div class="title text-white text-center">Select Exchange</div>
+                                    </div>
+                                    <div class="col-auto notification">
+                                        <!-- <div class="row mx-0 gap-3 align-items-center">
+                                            <div class="col-auto px-0"><a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/img/svg/settingicon.svg" class="w-100" alt="bell"></a></div>
+                                        </div> -->
+                                        <a href="javascript:;" class="text-decoration-none apply">Apply</a>
+                                    </div>
+                                </div>
+                            </navbar>
+                            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body p-0 modalContent">
+                            <div class="row mt-4 mx-0 coinTabContent rounded-top-4">
+                                <div class="col-12 py-2 px-0">
+                                    <div class="tabfilter d-flex align-items-center justify-content-between px-4 gap-3">
+                                        <div class="filterall d-inline-flex align-items-center gap-1">
+                                            All
+                                            <div class="d-inline-flex flex-column filterImgs">
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterup.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                                <a href="javascript:;" class="d-inline-flex filterIcons align-items-center justify-content-center">
+                                                    <img src="assets/img/svg/filterdown.svg" alt="filter" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="search-wrapper position-relative w-100">
+                                            <div class="input-holder d-flex align-items-center position-relative overflow-hidden">
+                                                <input type="text" class="search-input border-0 w-100 bg-transparent" placeholder="Type to search" />
+                                                <button class="search-icon d-inline-flex align-items-center justify-content-center border-0 bg-transparent position-absolute" onclick="searchToggle(this, event);">
+                                                    <span class="d-inline-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/searchicon2.svg" alt="search">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
+                                        </div>
+                                        <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                    </div>
+                                </div>
+                                <div class="col-12 tabContentMain px-0">
+                                    <div class="row mx-0">
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Binance" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/binance.svg" alt="Binance" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Binance
+                                                    <span class="starIcon d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/star.svg" alt="star" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance" id="Binance">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="CoinDCX" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/coindcx.svg" alt="CoinDCX" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    CoinDCX
+                                                    <span class="starIcon d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/star.svg" alt="star" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="CoinDCX" id="CoinDCX">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Wazirx" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/wazirx.svg" alt="Wazirx" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Wazirx
+                                                    <span class="starIcon d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/star.svg" alt="star" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Wazirx" id="Wazirx">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Coinbase" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/coinbase.svg" alt="Coinbase" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Coinbase
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinbase" id="Coinbase">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Huobi" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/huobi.svg" alt="Huobi" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Huobi
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Huobi" id="Huobi">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="FTX" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/FTX.svg" alt="FTX" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    FTX
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="FTX" id="FTX">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="OKX" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/OKX.svg" alt="OKX" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    OKX
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="OKX" id="OKX">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="KuCoin" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/KuCoin.svg" alt="KuCoin" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    KuCoin
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="KuCoin" id="KuCoin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Coinkuber" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Coinkuber.svg" alt="Coinkuber" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Coinkuber
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinkuber" id="Coinkuber">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Kraken" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Kraken.svg" alt="Kraken" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Kraken
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Kraken" id="Kraken">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Bitfinex" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Bitfinex.svg" alt="Bitfinex" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Bitfinex
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Bitfinex" id="Bitfinex">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Binance2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/binance.svg" alt="Binance" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Binance US
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance2" id="Binance2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="TRON" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/tron.svg" alt="TRON" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    TRON
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="TRON" id="TRON">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="OKX2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/OKX.svg" alt="OKX" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    OKX
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="OKX2" id="OKX2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="KuCoin2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/KuCoin.svg" alt="KuCoin" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    KuCoin
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="KuCoin2" id="KuCoin2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Coinkuber2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Coinkuber.svg" alt="Coinkuber" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Coinkuber
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Coinkuber2" id="Coinkuber2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Kraken2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Kraken.svg" alt="Kraken" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Kraken
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Kraken2" id="Kraken2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Bitfinex2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/Bitfinex.svg" alt="Bitfinex" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Bitfinex
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Bitfinex2" id="Bitfinex2">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="Binance3" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/binance.svg" alt="Binance" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    Binance US
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="Binance3" id="Binance3">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="marketlabelmain d-flex align-items-center justify-content-between">
+                                                <label for="TRON2" class="marketlabel d-flex align-items-center gap-3 w-100">
+                                                    <span class="marketLabelIcon rounded-pill d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/svg/tron.svg" alt="TRON" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    TRON
+                                                </label>
+                                                <input class="form-check-input checkBtn shadow-none rounded-pill" type="checkbox" name="TRON2" id="TRON2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                    </div>
                     </div>
                 </div>
             </div>
