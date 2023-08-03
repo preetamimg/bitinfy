@@ -129,22 +129,32 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <a href="javascript:;" class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
-                                <div class="d-flex align-items-center gap-3">
-                                    <span class="tabIcon d-flex align-items-center justify-content-center">
-                                        <img src="assets/img/svg/autorefresh.svg" alt="Auto Refresh" class="h-100 w-100 img-fluid">
-                                    </span>
-                                    Auto Refresh
+                            <div class="autosaveMain pb-3">
+                                <a href="javascript:;" class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="tabIcon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/svg/autorefresh.svg" alt="Auto Refresh" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Auto Refresh
+                                    </div>
+                                    <div class="form-switch switchMain p-0 d-flex align-items-center gap-2">
+                                        <label class="d-flex align-items-center switchLable" for="autorefresh">
+                                            <span>On</span>
+                                            <span>/</span>
+                                            <span>Off</span>
+                                        </label>
+                                        <input class="form-check-input switchInput border-0 shadow-none m-0" type="checkbox" role="switch" id="autorefresh" checked>
+                                    </div>
+                                </a>
+                                <div class="autosaveRange mx-auto d-flex flex-column mt-2 gap-2 ">
+                                    <input type="range" class="saveInput w-100 position-relative" step="50">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="stepcount">20s</span>
+                                        <span class="stepcount">40s</span>
+                                        <span class="stepcount">60s</span>
+                                    </div>
                                 </div>
-                                <div class="form-switch switchMain p-0 d-flex align-items-center gap-2">
-                                    <label class="d-flex align-items-center switchLable" for="autorefresh">
-                                        <span>On</span>
-                                        <span>/</span>
-                                        <span>Off</span>
-                                    </label>
-                                    <input class="form-check-input switchInput border-0 shadow-none m-0" type="checkbox" role="switch" id="autorefresh" checked>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-12">
                             <a href="javascript:;" class="profileBtn text-decoration-none d-flex align-items-center fw-normal justify-content-between">
