@@ -451,7 +451,7 @@
                     }
                     & .formInput{
                         resize: none;
-                        cursor: pointer;
+                        // cursor: pointer;
                         height: 140px;
                         &:focus{
                             border-color: $theme-blue;

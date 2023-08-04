@@ -1901,3 +1901,22 @@ body {
     //     transform: scale(1.1);
     // }
 }
+
+
+// password management page start
+.passwordManagement {
+    // & .submitBtn {
+    //     &.disabled {
+    //         background-color:$theme-dark ;
+    //         &:hover {
+    //             background-color:$theme-dark ;
+    //         }
+    //     }
+    // }
+    & .changepasswardHeading {
+        font-size:18px ;
+        font-weight:500 ;
+        color:$text-gray ;
+    }
+}
+// password management page end
