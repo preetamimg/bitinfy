@@ -405,11 +405,35 @@
     & .supportSection{
         & .fromSection{
             & .cards{
+                & .inputtopLablel{
+                    color: $textClr;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 14px;
+                    left: 28px;
+                    background-color: $theme-dark;
+                    z-index: 1;
+                }
+                & .fileSubheading{
+                    font-size: 10px;
+                    color: $textClr;
+
+                }
                 & .inputgroup{
-                    & .inputgroupText{
-                        & .fromLabel{
-                            height: 10px;
+                    & .fromLabel{
+                        height: 47px;
+                        border: 1px solid $dark-border;
+                        color: $text-gray;
+                        font-size: 16px;
+                        border-radius: 10px !important;
+                        padding: 0px 13px;
+                        cursor: pointer;
+                        &:focus{
+                            border-color: $theme-blue !important;
+                        }
+                        & .textIcon{
                             width: 10px;
+                            height: 10px;
                         }
                     }
                 }
@@ -419,18 +443,25 @@
                         color: $light-bg;
                         font-size: 16px;
                         font-weight: 400;
+                        cursor: pointer;
+                        &:focus{
+                            border-color: $theme-blue;
+                        }
+
                     }
                     & .formInput{
                         resize: none;
+                        cursor: pointer;
                         height: 140px;
+                        &:focus{
+                            border-color: $theme-blue;
+                        }
                         &::placeholder{
                             color: $textClr;
                             font-size: 16px; 
                         }
                     }
-                    & .selectInput{
-                        top: -15px !important;
-                    }
+                 
                 }
           
             }

@@ -92,46 +92,34 @@
                             <form action="" class="form fromSection">
                                 <div class="row mx-0 gap-2">
                                     <div class="col-12 px-0">
-                                        <div class="cards">
+                                        <div class="cards position-relative">
+                                            <label for=" " class="inputtopLablel position-absolute"><span>Request Type</span></label>
                                             <div class="form-floating">
-                                                <select class="form-select pt-2 formSelect shadow-none" aria-label="Default select example">
+                                                <select class="form-select  formSelect shadow-none" aria-label="Default select example">
                                                     <option selected>Open this select menu</option>
                                                     <option value="1">One</option>
                                                     <option value="2">Two</option>
                                                     <option value="3">Three</option>
                                                 </select>
-                                                <label for="floatingInput " class=" selectInput"><span>Quantity</span></label>
                                             </div>
                                         </div>
-                                        
                                     </div> 
                                     <div class="col-12 px-0">
                                         <div class="cards position-relative">
+                                            <label class=" inputtopLablel "><span>Attachments</span></label>
                                             <div class="input-group inputgroup">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="Drop files here" placeholder="0">
-                                                    <label for="floatingInput23" class=" "><span>Attachments</span></label>
-                                                </div>
-                                                <span class="input-group-text bg-transparent border-start-0 inputgroupText">
-                                                    <!-- <div class="passwordText w-auto ">  
-                                                        <select class="form-select formSelect border-0 h-100 form-control shadow-none  bg-transparent rounded-end-0" id="floatingSelect" aria-label="Floating label select example">
-                                                            <option selected>USDT</option>
-                                                            <option value="1">USDT</option>
-                                                            <option value="2">india</option>
-                                                        </select>
-                                                    </div> -->
-                                                    
-                                                    <label for="formFile" class="form-label fromLabel m-0 d-flex justify-content-center align-items-center "><img src="assets/img/Plus.svg" class="w-100" alt="Profile"></label>
-                                                </span>
+                                                <input type="file" hidden="" class="form-control shadow-none rounded-end-0 border-end-0 bg-transparent" id="floatingInput23" value="Drop files here" placeholder="0">
+                                                <label for="formFile" class="form-label rounded-0 fromLabel  m-0 d-flex justify-content-between w-100  align-items-center "><span>Drop files here</span> <span class="textIcon d-inline-flex"><img src="assets/img/Plus.svg" class="w-100" alt="Profile"></span> </label>
                                             </div>
+                                            <div class="fileSubheading pt-2 ps-2">(Must be .jpg , .pdf , less than 5 mb)</div>
                                         </div>
                                     </div>
                                     <div class="col-12 px-0">
-                                        <div class="cards">
+                                        <div class="cards position-relative">
+                                            <label  class=" inputtopLablel position-absolute"><span>Description</span></label>
                                             <div class="form-floating">
-                                                <textarea class="form-control formInput shadow-none bg-transparent" placeholder="" id="floatingTextarea"></textarea>
+                                                <textarea class="form-control formInput shadow-none bg-transparent" placeholder="" ></textarea>
                                                 <!-- <input type="text" class="form-control formInput shadow-none bg-transparent" id="floatingInput" value="0" placeholder="0"> -->
-                                                <label for="floatingInput" class=" "><span>Description</span></label>
                                             </div>
                                         </div>
                                     </div>
