@@ -751,11 +751,11 @@ body {
                     width: 15px;
                     -webkit-appearance: none;
                     height: 15px;
-                    cursor: ew-resize;
+                    cursor: pointer;
                     background: $theme-blue;
                     border-radius: 50%;
                     // box-shadow: -80px 0 0 80px #43e5f7;
-                  }
+                }
             }
             & .stepcount {
                 font-size: 10px;
