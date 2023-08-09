@@ -139,6 +139,21 @@ body {
         }
     }
 }
+ .dletedBtn{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $theme-red;
+    color: var(--text-Clr);
+    padding: 11px 82px;
+    & .filterImgs {
+        gap: 1px;
+        & .filterIcons {
+            height: 8px;
+            width: 9px;
+        }
+    }
+}
+
 
 // search box
 .search-wrapper {
