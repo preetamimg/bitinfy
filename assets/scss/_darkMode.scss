@@ -1,0 +1,52 @@
+body {
+    &.lightMode {
+        & .filterImg {
+            filter: brightness(0.2);
+            &:hover {
+                filter: brightness(0.2) !important;
+            }
+        }
+        & .customBtn {
+            color: white;
+            &.disabled {
+                color: #5a5858;
+            }
+        }
+        & .footer {
+            &.bottomBar {
+                & .innerBar {
+                    & .bottombarTabs {
+                        &.home {
+                            & .linkTab {
+                                background-color: var(--themeing1) !important;
+                                &.active {
+                                    & .gameImg {
+                                        & img {
+                                            filter: brightness(9) !important;
+                                        }
+                                    }
+                                }
+                                & .gameImg {
+                                    & img {
+                                        filter: brightness(9) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button {
+                        &::after {
+                            background-image: var(--bs-accordion-btn-icon) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
