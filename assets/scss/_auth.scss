@@ -63,6 +63,7 @@ body {
     border-radius: 9px;
     padding: 12px 16px 12px 16px;
     font-size: 16px;
+    cursor: pointer;
     // line-height: 19px;
     & .tabIcon {
         height: 26px;
@@ -78,6 +79,7 @@ body {
 .innerheader {
     & .title {
         font-size: 22px;
+        color :var(--text-Clr);
     }
 }
 
@@ -139,6 +141,21 @@ body {
         }
     }
 }
+ .dletedBtn{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $theme-red;
+    color: var(--text-Clr);
+    padding: 11px 82px;
+    & .filterImgs {
+        gap: 1px;
+        & .filterIcons {
+            height: 8px;
+            width: 9px;
+        }
+    }
+}
+
 
 // search box
 .search-wrapper {
@@ -341,7 +358,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
-    color: $textClr;
+    color: white;
     background-color:$theme-green ;
     padding: 3px 20px;
     border-radius: 5px;
@@ -482,7 +499,7 @@ body {
 // apply button 
 .applyBtn {
     font-size: 14px;
-    color: $textClr;
+    color: white;
     padding: 9px 67px;
     border-radius: 5px;
     background: $theme-blue;
@@ -582,6 +599,7 @@ body {
     padding: 7px 0;
     &:hover {
         background-color: $theme-blue;
+        color: white;
     }
 }
 
@@ -784,7 +802,7 @@ body {
             transition: all 0.3s ease-in-out;
             &.active {
             background:$theme-blue ;
-            color: $textClr;
+            color: white;
             }
         }
     }
@@ -882,13 +900,13 @@ body {
             font-weight: 700;
             &.active {
                 background:$theme-green ;
-                color: $textClr;
+                color: white;
             }
         }
         & .bestsellBtn {
             &.active {
                 background:$theme-red;
-                color: $textClr;
+                color: white;
             }
         }
     }
@@ -997,7 +1015,7 @@ body {
                 font-size: 16px;
                 font-weight: 700;
                 background-color: $theme-blue;
-                color: $textClr;
+                color: white;
                 padding: 11px 82px;
             }
         }
@@ -1095,7 +1113,7 @@ body {
                     font-weight: 700;
                     background: $theme-blue;
                     padding: 5px 6px;
-                    color: $textClr;
+                    color: white;
                     border-radius: 5px;
                 }
             }
@@ -1220,8 +1238,8 @@ body {
                 color: $textClr;
                 font-weight: 700;
                 & .arbitrageInnerIcon {
-                    height: 15px;
-                    width: 15px;
+                    height: 25px;
+                    width: 25px;
                 }
             }
         }
@@ -1249,6 +1267,9 @@ body {
                         background-color: $text-gray;
                         &.active {
                             background-color: $theme-blue;
+                        }
+                        &.halfActive{
+                            background-image: linear-gradient(90deg, $theme-blue 50%, $text-gray 50%)
                         }
                     }
                 }
@@ -1439,7 +1460,7 @@ body {
             color: $text-gray;
             &.active {
                 background-color: $theme-blue;
-                color: $textClr;
+                color: white;
             }
         }
     }
@@ -1738,7 +1759,7 @@ body {
             & .openexchangeBtn {
                 font-size:12px ;
                 font-weight: 700;
-                color:$textClr ;
+                color:white ;
                 background-color:$theme-blue ;
                 padding: 5px;
                 border-radius: 5px;

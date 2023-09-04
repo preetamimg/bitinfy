@@ -45,7 +45,7 @@
                         border-radius: 5px !important;
                         padding: 5px 13px;
                         background: $theme-red;
-                        color: $textClr;
+                        color: white;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 700;
@@ -56,7 +56,7 @@
                     border-radius: 5px !important;
                     padding: 5px 13px;
                     background: $theme-green;
-                    color: $textClr;
+                    color: white;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 700;
@@ -105,62 +105,62 @@
                     }
                 }
 
-                & .portfolio{
-                    // padding: 10px 16px !important;
-                    & .outterCard{
-                      background-color: $theme-dark;
-                      border-radius: 7px;
-                      padding: 15px 20px;
-                      & .portfolioCard{
-                         position: relative;
-                         &::before{
-                          position: absolute;
-                          content: '';
-                          right: 0;
-                          top: 0px;
-                          width: 1px;
-                          height: 33px;
-                          background-color:$theme-blue;
+                // & .portfolio{
+                //     // padding: 10px 16px !important;
+                //     & .outterCard{
+                //       background-color: $theme-dark;
+                //       border-radius: 7px;
+                //       padding: 15px 20px;
+                //       & .portfolioCard{
+                //          position: relative;
+                //          &::before{
+                //           position: absolute;
+                //           content: '';
+                //           right: 0;
+                //           top: 0px;
+                //           width: 1px;
+                //           height: 33px;
+                //           background-color:$theme-blue;
               
-                         }
-                         &:last-child{
-                          &::before{
-                              display: none;
-                          }
-                         }
-                          & .subHeading{
-                              color: $text-gray;
+                //          }
+                //          &:last-child{
+                //           &::before{
+                //               display: none;
+                //           }
+                //          }
+                //           & .subHeading{
+                //               color: $text-gray;
                               
-                              font-size: 14px;
-                              font-style: normal;
-                              font-weight: 400;
-                              line-height: normal;
-                          }
-                          & .headingcard{
-                              color:$textClr;
+                //               font-size: 14px;
+                //               font-style: normal;
+                //               font-weight: 400;
+                //               line-height: normal;
+                //           }
+                //           & .headingcard{
+                //               color:$textClr;
                               
-                              font-size: 14px;
-                              font-style: normal;
-                              font-weight: 400;
-                              line-height: normal;
-                          }
-                          & .pera{
-                              color:$theme-green;
-                              font-size: 10px;
-                              font-style: normal;
-                              font-weight: 400;
-                              line-height: normal;
-                              & .icon{
-                                  width: 12px;
-                                  height: 14px;
-                              }
-                              &.loss {
-                                color: $theme-red;
-                              }
-                          }
-                      }
-                    }
-                    }
+                //               font-size: 14px;
+                //               font-style: normal;
+                //               font-weight: 400;
+                //               line-height: normal;
+                //           }
+                //           & .pera{
+                //               color:$theme-green;
+                //               font-size: 10px;
+                //               font-style: normal;
+                //               font-weight: 400;
+                //               line-height: normal;
+                //               & .icon{
+                //                   width: 12px;
+                //                   height: 14px;
+                //               }
+                //               &.loss {
+                //                 color: $theme-red;
+                //               }
+                //           }
+                //       }
+                //     }
+                // }
                     & .owlSection{
                         // padding: 10px 16px !important;
                 
@@ -273,6 +273,62 @@
             }
         }
     }
+    & .portfolio{
+        // padding: 10px 16px !important;
+        & .outterCard{
+          background-color: $theme-dark;
+          border-radius: 7px;
+          padding: 15px 20px;
+          & .portfolioCard{
+             position: relative;
+             &::before{
+              position: absolute;
+              content: '';
+              right: 0;
+              top: 0px;
+              width: 1px;
+              height: 33px;
+              background-color:$theme-blue;
+  
+             }
+             &:last-child{
+              &::before{
+                  display: none;
+              }
+             }
+              & .subHeading{
+                  color: $text-gray;
+                  
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+              }
+              & .headingcard{
+                  color:$textClr;
+                  
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+              }
+              & .pera{
+                  color:$theme-green;
+                  font-size: 10px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  & .icon{
+                      width: 12px;
+                      height: 14px;
+                  }
+                  &.loss {
+                    color: $theme-red;
+                  }
+              }
+          }
+        }
+    }
 }
 .ArbitrageCard{
     // padding: 5px 16px !important;
@@ -341,15 +397,40 @@
             line-height: normal;
         }
         & .icon{
-            width: 10px;
-            height: 10px;
+            width: 6px;
+            height: 6px;
+            cursor: pointer;
         }
     }
 }
 
 
 
-// arbitrageadvancescreen
+// noDataSection 
+
+.noDataSection{
+    & .nodataCard{
+        & .outterCard{
+            position: relative;
+            overflow: hidden;
+            background-color:$theme-dark;
+            height: 200px;
+            width: 100%;
+            & .imgdata{
+                width: 120px;
+                height: 120px;
+            }
+            & .dataHeading{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: $textClr;
+            }
+        }
+    }
+}
+
+
 
 
 

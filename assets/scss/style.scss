@@ -170,11 +170,11 @@
   --themeing2: #F3F3F3;
   --themeing3: #2CBD96;
   --themeing4: #E96464;
-  --text-gray: #CAC4D0;
+  --text-gray: #949494;
   --darborder: #303030;
   --gray: #9f9f9f;
   --themeing1dark: #134c85;
-  --light-bg:#D9D9D9B2;
+  --light-bg:#898787;
 
 }
 
@@ -204,8 +204,8 @@ $light-bg: #{var(--light-bg)};
 @import "pages";
 @import "forms";
 @import "button";
-@import "ajay";
-@import "pallavi";
-@import "mohit";
-@import "shivtej";
+@import "auth";
+@import "common";
+@import "index";
+@import "darkMode"
 
